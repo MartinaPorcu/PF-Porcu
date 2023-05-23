@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'JosefinSans';
+    color: black;
+}
+
+body {
+    background-color: #dcccc3;
+}
+
+header {
+    background-color: #D9B2A0;
+}
+
+.logo {
+    border-radius: 100px;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscador {
+    text-align: center;
+}
+
+.padre {
+    align-items: center;
+    justify-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+
+}
+
+body header nav ul li {
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+body header div nav ul li:hover{
+    transform:scale(1,1);
+}
+
+div nav ul li a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+}
+body header div nav ul li:hover a{
+    color: white 
+}
+
+.carrito{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/*Main de index*/
+.subtitulo1{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    align-content: center;
+}
+
+.primeraseccion{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+main section article{
+    justify-content: space-evenly;
+}
+
+.articulos{
+    margin: 20px;;
+    padding: 10px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid ;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+    text-align: center;
+        }
+
+
+.segundaseccion{
+justify-content: space-evenly;
+display: flex;
+padding-bottom: 100px;
+}
+.articulos2{
+    text-align: center;
+    font-style:italic ;
+    }
+
+.articulos2:hover{
+    transform: scale(1.1);
+}
+
+
+.categoriashover{
+width: 200px;
+height: 200px;
+position: relative;
+}
+
+.Categorias{
+height: 200px;
+width: 200px; 
+border: solid 2px black;
+}
+
+.titulocategoria{
+width: 0%;
+height: 100%;
+background-color: rgba(199,129, 84, 0.7);
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: end;
+overflow: hidden;
+
+}
+
+.articulos2:hover .titulocategoria{
+    width: 100%;
+}
+
+/* Footer*/
+ footer {
+    background-color: #D9B2A0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+/* footer section{
+    border-right: solid 1px black;
+} */
+footer section ul{
+    text-decoration: none;
+    list-style: none;
+    /* padding-right: 150px; */
+}
+
+footer section ul li a{
+    text-decoration: none;
+}
+
+footer h5 {
+text-align: center;
+padding-top: 10px;
+}
+
+.pagos{
+    display: flex;
+    padding: 0px
+}
+
+.tarjeta{
+    width: 50px;
+    align-content: end;
+} 
