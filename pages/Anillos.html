@@ -1,155 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARAVA</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header class="encabezado">
-        <div>
-            <img class="logo" src="../img/Logo.png" alt="logo" width="120px">
-        </div>
-        <div class="buscador">
-            <label for="buscador"><img src="../img/icono lupa.png" alt="iconolupa" width="20px"></label>
-            <input type="text" name="buscador">
-            <button>Buscar</button>
-        </div>
-        <nav> 
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./Productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./Local.html">Local</a>
-                </li>
-                <li>
-                    <a href="./Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <ul class="carrito">
-                <li><a href="./Carrito.html"><img src="../img/icono carrito.png" alt="Carrito" width="20px"></a></li>
-                <li ><a href="./Carrito.html"><img src="../img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
-            </ul>
-        </div>
-    </header>
-    <section>
-        <img src="../img/Portada Sarava.png" alt="Portada" width="100%" height="400px">
-    </section>
-    <h2 class="tituloscategorias">Categoria: Anillos</h2>
-    <div class="contenedor">
-        <aside class="filtros">
-            <h4>Material</h4>
-            <ul class="listafiltros">
-                <li>
-                    Acero
-                </li>
-                <li>
-                    Plata
-                </li>
-            </ul>
-            <h4>Tema</h4>
-            <ul class="listafiltros">
-                <li>
-                    Brillos
-                </li>
-                <li>
-                    Clásicos
-                </li>
-                <li>
-                    Formas y Símbolos
-                </li>
-            </ul>
-        </aside>
-        <main class="articuloscategorias">
-            <article class="articulo">
-                <img src="../img/anillo clasico de plata.jpg" alt="Anilloclasico" width="100px" height="100px">
-                <p>Anillo de plata clásico </p>
-                <h5>$ 8.000 </h5>
-                <button>
-                    Agregar al Carrito
-                </button>
-            </article>
-            <article class="articulo">
-                <img src="../img/anillo clasico acero.jpg" alt="Anilloacero" width="100px" height="100px">
-                <p>Anillo de acero clásico </p>
-                <h5>$ 4.000 </h5>
-                <button>
-                    Agregar al Carrito
-                </button>
-            </article>
-            <article class="articulo">
-                <img src="../img/anillo plata.jpg" alt="Anilloclasico" width="100px" height="100px">
-                <p>Anillo de plata clásico </p>
-                <h5>$ 8.000 </h5>
-                <button>
-                    Agregar al Carrito
-                </button>
-            </article>
-            <article class="articulo">
-                <img src="../img/anillo de acero con brillo.jpeg" alt="Anilloacero" width="100px" height="100px">
-                <p>Anillo de acero con brillos </p>
-                <h5>$ 5.000 </h5>
-                <button>
-                    Agregar al Carrito
-                </button>
-            </article>
-            <article class="articulo">
-                <img src="../img/anillo de corazon.jpg" alt="Anillocorazon" width="100px" height="100px" >
-                <p>Anillo de plata con corazones  </p>
-                <h5>$ 10.000 </h5>
-                <button>
-                    Agregar al Carrito
-                </button>
-            </article>
-            <article class="articulo">
-                <img src="../img/anillo arbol de la vida.jpg" alt="Anilloarbol" width="100px" height="100px">
-                <p>Anillo de acero con arbol de la vida </p>
-                <h5>$ 5.000 </h5>
-                <button>
-                    Agregar al Carrito
-                </button>
-            </article>
-            <article class="articulo">
-                <img src="../img/anillo de plata con brillo.jpg"  alt="Anillobrillo" width="100px" height="100px">
-                <p>Anillo de plata con piedras brillantes </p>
-                <h5>$ 11.000 </h5>
-                <button>
-                    Agregar al Carrito
-                </button>
-            </article>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SARAVA</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="encabezado">
+            <div class="container-fluid ">
+                <div class="row padre">
+                    <div class="col-xs-2 col-lg-2 header__logo">
+                        <img class="logo" src="../img/Logo.png" alt="logo">
+                    </div>
+                    <div class="col-xs-4 col-lg-3 buscador " >
+                        <label for="buscador"><img class="header__imagen__lupa" src="../img/icono lupa.png" alt="iconolupa"></label>
+                        <input  type="text" name="buscador">
+                        <button >Buscar</button>
+                    </div>
+                    <div class="col-xs-7 col-lg-5 header__menu">
+                        <nav > 
+                            <ul class="menu">
+                                <li>
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./Productos.html">Productos</a>
+                                </li>
+                                <li>
+                                    <a href="./Local.html">Local</a>
+                                </li>
+                                <li>
+                                    <a href="./Contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-3 col-lg-2 header__carrito">
+                        <ul class="carrito" >
+                            <li><a href="./Carrito.html"><img src="../img/icono carrito.png" alt="Carrito" width="20px"></a></li>
+                            <li ><a href="./Carrito.html"><img src="../img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <img src="../img/Portada Sarava.png" alt="Portada" width="100%">
+        </section>
+    <h2 class=" col-12 titulos__paginas">Categoria: Anillos</h2>
+        <main class="main__anillos">
+            <section class="container main__anillos__aside">
+                <div class="row contenedor">
+                        <aside class="filtros col-2">
+                            <h4>Material</h4>
+                            <ul class="listafiltros">
+                                <li>
+                                    Acero
+                                </li>
+                                <li>
+                                    Plata
+                                </li>
+                            </ul>
+                            <h4>Tema</h4>
+                            <ul class="listafiltros">
+                                <li>
+                                    Brillos
+                                </li>
+                                <li>
+                                    Clásicos
+                                </li>
+                                <li>
+                                    Formas y Símbolos
+                                </li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section class="container main__anillos__articulos">
+                        <div class="row">
+                        <article class="articulo col-2">
+                            <img src="../img/anillo clasico de plata.jpg" alt="Anilloclasico" width="100px" height="100px">
+                            <p>Anillo de plata clásico </p>
+                            <h5>$ 8.000 </h5>
+                            <button>
+                                Agregar al Carrito
+                            </button>
+                        </article>
+                        <article class="articulo col-2">
+                            <img src="../img/anillo clasico acero.jpg" alt="Anilloacero" width="100px" height="100px">
+                            <p>Anillo de acero clásico </p>
+                            <h5>$ 4.000 </h5>
+                            <button>
+                            Agregar al Carrito
+                            </button>
+                        </article>
+                        <article class="articulo col-2">
+                            <img src="../img/anillo plata.jpg" alt="Anilloclasico" width="100px" height="100px">
+                            <p>Anillo de plata clásico </p>
+                            <h5>$ 8.000 </h5>
+                            <button>
+                            Agregar al Carrito
+                            </button>
+                        </article>
+                        <article class="articulo col-2">
+                            <img src="../img/anillo de acero con brillo.jpeg" alt="Anilloacero" width="100px" height="100px">
+                            <p>Anillo de acero con brillos </p>
+                            <h5>$ 5.000 </h5>
+                            <button>
+                            Agregar al Carrito
+                            </button>
+                        </article>
+                    </div>
+                    <div class="row">
+                        <article class="articulo col-2">
+                            <img src="../img/anillo de corazon.jpg" alt="Anillocorazon" width="100px" height="100px" >
+                            <p>Anillo de plata con corazones  </p>
+                            <h5>$ 10.000 </h5>
+                            <button>
+                                Agregar al Carrito
+                            </button>
+                        </article>
+                        <article class="articulo col-2">
+                            <img src="../img/anillo arbol de la vida.jpg" alt="Anilloarbol" width="100px" height="100px">
+                            <p>Anillo de acero con arbol de la vida </p>
+                            <h5>$ 5.000 </h5>
+                            <button>
+                            Agregar al Carrito
+                            </button>
+                        </article>
+                        <article class="articulo col-2">
+                            <img src="../img/anillo de plata con brillo.jpg"  alt="Anillobrillo" width="100px" height="100px">
+                            <p>Anillo de plata con piedras brillantes </p>
+                            <h5>$ 11.000 </h5>
+                            <button>
+                            Agregar al Carrito
+                            </button>
+                        </article>
+                    </div>
+                    </section>
+            </section>
         </main>
-    </div>
-    <footer>
-        <section>
-            <ul>
-                <li><img src="../img/icono telefono.png" alt="Numero" width="20px"> 5678-8976</li>
-                <li><a href="mailto:sarava@gmail.com"> <img src="../img/icono email.png" alt="Email" width="20px"> sarava@gmail.com</a></li>
-                <li><img src="../img/icono ubicacion.png" alt="Ubicacion" width="20px">  Av. Rivadavia N°5527, CABA</li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                <li><a href="./Anillos.html">Volver Arriba</a></li>
-            </ul>
-        </section>
-        <section>
-            <h5>MEDIOS DE PAGO</h5>
-            <ul class="pagos">
-                <li><img class="tarjeta" src="../img/icono mastercard.png" alt="Mastercard" ></li>
-                <li><img class="tarjeta" src="../img/icono visa.jpg" alt="Visa" ></li>
-                <li><img class="tarjeta" src="../img/icono mp.png" alt="MercadoPago" width="20px" ></li>
-            </ul>
-        </section>
-    </footer>
+        <footer >
+            <section class="container-fluid">
+                <div class="row" >
+                    <ul class="col-xs-4 col-lg-3 footer__lista__uno" >
+                        <li><img src="../img/icono telefono.png" alt="Numero" width="20px"> 5678-8976</li>
+                        <li><a href="mailto:sarava@gmail.com"> <img src="../img/icono email.png" alt="Email" width="20px"> sarava@gmail.com</a></li>
+                        <li><img src="../img/icono ubicacion.png" alt="Ubicacion" width="20px">  Av. Rivadavia N°5527, CABA</li>
+                    </ul>
+                    <ul class="col-xs-4 col-lg-3 footer__lista__dos ">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./Contacto.html">Contacto</a></li>
+                        <li><a href="./Anillos.html">Volver Arriba</a></li>
+                    </ul>
+                    <div class="col-xs-8 col-lg-3 footer__lista__tres  ">
+                        <h5>MEDIOS DE PAGO</h5>
+                        <ul class="pagos" >
+                            <li><img class="tarjeta" src="../img/icono mastercard.png" alt="Mastercard" ></li>
+                            <li><img class="tarjeta" src="../img/icono visa.jpg" alt="Visa" ></li>
+                            <li><img class="tarjeta" src="../img/icono mp.png" alt="MercadoPago" width="20px" ></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
 </body>
 </html>

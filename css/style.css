@@ -17,15 +17,20 @@ header {
 
 .logo {
     border-radius: 100px;
+    width:120px;
 }
 .encabezado {
     display: flex;
+    flex-wrap:wrap ;
     justify-content: space-between;
     align-items: center;
 }
 
 .buscador {
     text-align: center;
+}
+.header__imagen__lupa{
+    width: 30px;
 }
 
 .padre {
@@ -35,18 +40,19 @@ header {
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     list-style: none;
 }
 
 li {
-    padding: 10px;
+    padding: 5px;
 
 }
 
 body header nav ul li {
     padding: 0 20px 0 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 body header div nav ul li:hover{
     transform:scale(1,1);
@@ -63,9 +69,11 @@ body header div nav ul li:hover a{
 
 .carrito{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
 }
+
 
 /*Main de index*/
 .subtitulo1{
@@ -77,50 +85,41 @@ body header div nav ul li:hover a{
     align-content: center;
 }
 
-.primeraseccion{
+.main__index__masvendido{
     justify-content: space-evenly;
     display: flex;
+    flex-wrap:wrap;
 }
 
 main section div article{
     justify-content: space-evenly;
 }
 
-.articulos{
-    margin: 20px;;
-    padding: 10px;
-    border-color: black;
-    border-radius: 5px;
-    border-style: solid ;
-    border-width: 2px;
-    border-color: black;
-    background-color: white;
-    text-align: center;
-        }
 
 
-.segundaseccion{
+.main__index__paginas{
 justify-content: space-evenly;
 display: flex;
+flex-wrap: wrap;
 padding-bottom: 100px;
 }
-.articulos2{
+.main__index__categorias{
     text-align: center;
     font-style:italic ;
     }
 
-.articulos2:hover{
+.main__index__categorias:hover{
     transform: scale(1.1);
 }
 
 
-.categoriashover{
+.main__index__categorias__hover{
 width: 200px;
 height: 200px;
 position: relative;
 }
 
-.Categorias{
+.main__index__categorias__imagenes{
 height: 200px;
 width: 200px; 
 border: solid 2px black;
@@ -133,13 +132,14 @@ background-color: rgba(199,129, 84, 0.7);
 position: absolute;
 top: 0;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: end;
 overflow: hidden;
 
 }
 
-.articulos2:hover .titulocategoria{
+.main__index__categorias:hover .titulocategoria{
     width: 100%;
 }
 
@@ -147,6 +147,7 @@ overflow: hidden;
 footer {
 background-color: #D9B2A0;
 display: flex; 
+flex-wrap: wrap;
 padding-top: 15px ;
 
 }
@@ -158,13 +159,13 @@ justify-content: space-between;
 footer section div ul{
     text-decoration: none;
     list-style: none;
-    padding-right: 150px;
+    padding-right: 200px;
 }
 footer section div ul li img{
     margin-right: 20px;
 }
 
-.listafooterdos{
+.footer__lista__dos{
     margin-left: 100px;
     margin-right: 100px;
     text-align: start;
@@ -193,3 +194,437 @@ footer section div h5{
     align-content: end;
 
 } 
+
+/*Pagina Local*/
+.main__local__titulo{
+    font-style: italic;
+    font-size: 40px;
+    margin: 0px 90px 0px 90px;
+    text-align: left;
+    font-weight: bold;
+}
+.ubicacion{
+    padding-top: 20px;
+
+} 
+main section div div h3{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+main section div div p{
+    font-size: 25px;
+}
+.mapa {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+iframe { 
+    margin-left: 300px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.reloj {
+padding: 60px 0px;
+}
+
+/* Pagina Productos */
+.main__productos{
+    display: flex;
+}
+
+.main__productos__articulos {
+    width: 80%;
+}
+.main__productos__aside {
+    width: 20%;
+}
+
+.main__productos__listacategoria{
+    list-style: none;
+}
+
+.articulosproductos{
+    width: 200px;
+    height: 270px;
+    margin: 10px;
+    padding: 5px; 
+    background-color: white;
+    border-radius: 5px;
+    border: solid 2px black;
+    text-align: center;
+}
+
+.tituloproductos{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    margin-left: 40px;
+}
+
+/*Página de anillos, Aros, Cadenas, Productos, Reloj (Main)*/
+.titulos__paginas{
+    font-style: italic;
+    font-size: 40px;
+    margin: 0px 90px 0px 90px;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.filtros{
+background-color: #d9b2a091;
+padding: 20px 15px 20px 15px;
+width: 150px;
+}
+main section div aside h4{
+    font-weight: bold;
+}
+    .listafiltros{ 
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    
+    text-align: start;
+    }
+    
+    .contenedor {
+        display: flex;
+    }
+    
+    .articuloscategorias {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    
+    .articulo {
+        width: 200px;
+        height: 270px;
+        margin: 20px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        border: solid 2px black;
+        text-align: center;
+        }
+    
+    h2 {
+        padding: 25px;
+    }
+    
+    /*Pagina Contacto*/
+    .maincontacto {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .datoscontacto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-right: 2px solid black;
+        width: 600px;
+        align-items:  start;
+        padding-left: 100px;
+    }
+    main section div div h3{
+        font-size: 30px;
+    }
+    .div-contacto {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+main section div div p a{
+    color: black;
+}
+    
+    .datos-contacto {
+        padding: 15px;
+    }
+    
+    form ul {
+        list-style: none;
+        padding-top: 20px;
+    }
+
+main section div div h4{
+    text-align: start;
+    text-decoration: underline;
+}
+main section div div p{
+    text-align: start;
+}
+
+    .formulario {
+        text-align: center;
+        padding: 50px;
+    }
+main section div div form ul li input{
+    width: 100%;
+    height: 40px;
+}
+
+main section div div form ul li button{
+    width: 20%;
+    height: 40px;
+}
+
+/*Pagina Carrito*/
+.seccioncarrito{
+    margin: 100px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito-arriba {
+    border-bottom: solid 1px black;
+    padding-bottom: 100px;
+}
+
+.textocarritoycorazon{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    width: 300px;
+    margin: 0px 50px 10px 50px;
+    text-align: center;
+}
+
+.botoncompras{
+width: 150px;
+}
+
+.textoboton{
+text-decoration: none;
+color: black;
+font-size:xx-large;
+}
+/* Categoria Anillos */
+.main__anillos{
+display: flex;
+}
+
+.main__anillos__articulos {
+    width: 80%;
+}
+.main__anillos__aside {
+    width: 20%;
+}
+
+/* Categoria Aros */
+.main__aros{
+    display: flex;
+    }
+    
+    .main__aros__articulos {
+        width: 80%;
+    }
+    .main__aros__aside {
+        width: 20%;
+    }
+
+/*Categoria Cadenas */
+
+.main__cadenas{
+    display: flex;
+    }
+    
+    .main__cadenas__articulos {
+        width: 80%;
+    }
+    .main__cadenas__aside {
+        width: 20%;
+    }
+
+.listafiltrosCadenas{
+text-align: start;
+list-style: none;
+width: 200px;
+} 
+
+
+/* Categoria Reloj */
+
+.main__reloj{
+display: flex;
+}
+
+.main__reloj__articulos {
+        width: 80%;
+    }
+.main__reloj__aside {
+width: 20%;
+}
+
+.filtroreloj{
+background-color: #d9b2a091;
+padding: 5px 5px 5px 5px;
+width: 150px;
+/* height: 380px; */
+}
+
+.listafiltroreloj{
+    text-decoration: none;
+    list-style: none;
+    text-align: start;
+    align-items: content;
+    width: 200px;
+
+}
+
+/* Diseño responsive-vista mobile */
+
+/* index */
+@media (max-width:600px) {
+    .logo{
+        width: 60px;
+    } 
+}
+@media (max-width:480px) {
+    header{
+        padding: 15px;
+    }
+    .logo{
+        width: 60px;
+    } 
+    .header__logo{
+        width: 80px;
+    }
+    .buscador{
+        width: 350px;
+        text-align: start;
+    }
+
+    .header__imagen__lupa{
+        display: none;
+    }
+
+    .header__menu{
+        width: 300px;
+    }
+    .header__carrito{
+        width:150px;
+    }
+    .menu{
+        padding-left: 0px;
+    }
+
+    body header nav ul li {
+        padding: 20px 5px 0px 0px;
+        font-size: 12px;
+        align-items: start;
+    }
+
+
+    .carrito{
+        justify-content: end;
+        width: 100px;
+
+    }
+/* portada sarava */
+    section img{
+        width:100%;
+        height: 300px;
+    }
+
+    .subtitulo1{
+        font-size: 20px;
+    }
+/* main index */
+    main section div article img {
+        width: 60px;
+        height: 80px; ;
+    }
+    .articulo{
+        width: 300px;
+        height: 250px;
+    }
+    .main__index__paginas{
+        padding-right: 20px;
+    }
+    .main__index__categorias{
+    width: 200px;
+    padding: 20px;
+    }
+    .main__index__categorias__hover{
+        width: 200px;
+        height: 200px;
+
+    }
+        
+    .main__index__categorias__imagenes{
+        height: 200px;
+        width: 200px; 
+    }
+
+    /* Footer */
+    footer section div {
+        margin: 0px;
+    
+    }
+    footer section div ul li {
+        font-size: 10px; 
+    }
+
+    footer section div ul li img {
+        width: 10px;
+        height: 10px;
+    }
+    .footer__lista__uno{
+        width: 250px;
+    }
+    .footer__lista__dos{
+        margin: 0px;
+        width: 150px;
+    }
+    footer section div div h5 {
+        font-size: 12px;
+    }
+
+    .pagos{
+        justify-content: center;
+    }
+
+    .tarjeta{
+        width: 25px;
+        height: 20px;
+    }
+
+    /*Main pagina local */
+    .main__local__img{
+        width: 40px;
+        height: auto;
+    }
+    .main__local__titulo{
+        text-align: start;
+        font-style: italic;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .main__local__h3__ubicacionyhorario{
+        font-size: 15px;
+    }
+    .mapa{
+        width: 300px;
+        height: auto;
+        padding-left: 100px;
+    }
+
+    .main__local__p__ubicacionyhorario{
+        font-size: 12px;
+    }
+}
