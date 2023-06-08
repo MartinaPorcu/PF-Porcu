@@ -10,51 +10,62 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="container-fluid ">
-            <div class="row padre">
-                <div class="col-xs-2 col-lg-2 header__logo">
-                    <img class="logo" src="../img/Logo.png" alt="logo">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-transparent ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/Logo.png" alt=""></a>
+                <form class="d-flex " role="search">
+                    <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Local.html">Local</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-xs-4 col-lg-3 buscador " >
-                    <label for="buscador"><img class="header__imagen__lupa" src="../img/icono lupa.png" alt="iconolupa"></label>
-                    <input  type="text" name="buscador">
-                    <button >Buscar</button>
-                </div>
-                <div class="col-xs-7 col-lg-5 header__menu">
-                    <nav > 
-                        <ul class="menu">
-                            <li>
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="./Productos.html">Productos</a>
-                            </li>
-                            <li>
-                                <a href="./Local.html">Local</a>
-                            </li>
-                            <li>
-                                <a href="./Contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xs-3 col-lg-2 header__carrito">
-                    <ul class="carrito" >
-                        <li><a href="./Carrito.html"><img src="../img/icono carrito.png" alt="Carrito" width="20px"></a></li>
-                        <li ><a href="./Carrito.html"><img src="../img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
+                <div class="header__div__carrito">
+                    <ul class="header__ul__carrito">
+                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"
+                                    alt="Carrito" width="20px"></a></li>
+                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
+                                    alt="Favoritos" width="20px"></a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     <section>
         <img src="../img/Portada Sarava.png" alt="Portada" width="100%">
     </section>
     <h2 class="titulos__paginas">Nuestros Productos</h2>
-    <main class="main__productos">
-        <section class="container main__productos__aside">
-            <aside class="row filtros">
+    <main class="main__productosycategorias">
+        <section class="container seccion__aside">
+            <aside class="filtros__productos__cel">
+                <h3 class="productos__aside__h3">Categorias</h3>
+                <ul class="main__productos__listacategoria__cel" >
+                    <li ><a class="listafiltros" href="../pages/Anillos.html">Anillos</a></li>
+                    <li ><a class="listafiltros" href="../pages/Aros.html">Aros</a></li>
+                    <li ><a class="listafiltros" href="../pages/Cadenas.html">Cadenas</a></li>
+                    <li ><a class="listafiltros" href="../pages/Reloj.html">Reloj</a></li>
+                </ul>
+            </aside>
+            <aside class="row filtros filtros__productos">
                 <h3>Categorias</h3>
                 <ul class="main__productos__listacategoria" >
                     <li ><a class="listafiltros" href="../pages/Anillos.html">Anillos</a></li>
@@ -64,9 +75,9 @@
                 </ul>
             </aside>
         </section>
-        <section class="container main__productos__articulos">
+        <section class="container main__productos__articulos seccion__articulos">
             <div class="row primerarticulosproductos">
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/anillo de acero con brillo.jpeg" alt="Anilloacero" width="100px" height="100px">
                     <p>Anillo de acero con brillos </p>
                     <h5>$ 5.000 </h5>
@@ -74,7 +85,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/anillo de corazon.jpg" alt="Anillocorazon" width="100px" height="100px">
                     <p>Anillo de plata con corazones </p>
                     <h5>$ 10.000 </h5>
@@ -82,7 +93,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/aros de acero corazon.jpg" alt="Aroconforma" width="100px" height="100px">
                     <p>Argollas de acero con forma de corazon </p>
                     <h5>$ 6.000 </h5>
@@ -90,7 +101,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/aros con brillos.jpg" alt="Arosconbrillos" width="100px" height="100px">
                     <p>Argollas pequeñas de plata con piedras </p>
                     <h5>$ 10.000</h5>
@@ -100,7 +111,7 @@
                 </article>
             </div>
             <div class="row">
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/collar de cruz.jpg" alt="Cadenacruz" width="100px" height="100px">
                     <p>Cadena de plata con cruz</p>
                     <h5>$ 7.000 </h5>
@@ -108,7 +119,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/cadena acero con dije corazon.jpg" alt="Cadena de acero" width="100px"
                         height="100px">
                     <p>Cadena de acero con dije de corazon </p>
@@ -117,7 +128,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/reloj analogico dorado.jpg" alt="Relojanalogico" width="100px" height="100px">
                     <p>Reloj Analogico dorado </p>
                     <h5>$ 19.000 </h5>
@@ -125,7 +136,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/reloj analogico clasico.jpg" alt="Relojanalogico" width="100px" height="100px">
                     <p>Reloj Analogico clasico</p>
                     <h5>$ 19.000 </h5>
@@ -135,7 +146,7 @@
                 </article>
             </div>
             <div class="row">
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/anillo arbol de la vida.jpg" alt="Anilloarbol" width="100px" height="100px">
                     <p>Anillo de acero con arbol de la vida </p>
                     <h5>$ 5.000 </h5>
@@ -143,7 +154,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulosproductos">
+                <article class="col-2 articulo">
                     <img src="../img/anillo de plata con brillo.jpg" alt="Anillobrillo" width="100px" height="100px">
                     <p>Anillo de plata con piedras brillantes </p>
                     <h5>$ 11.000 </h5>

@@ -10,148 +10,155 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="container-fluid ">
-            <div class="row padre">
-                <div class="col-xs-2 col-lg-2 header__logo">
-                    <img class="logo" src="./img/Logo.png" alt="logo">
-                </div>
-                <div class="col-xs-4 col-lg-3 buscador " >
-                    <label for="buscador"><img class="header__imagen__lupa" src="./img/icono lupa.png" alt="iconolupa"></label>
-                    <input  type="text" name="buscador">
-                    <button >Buscar</button>
-                </div>
-                <div class="col-xs-7 col-lg-5 header__menu">
-                    <nav > 
-                        <ul class="menu">
-                            <li>
-                                <a href="./index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="./pages/Productos.html">Productos</a>
-                            </li>
-                            <li>
-                                <a href="./pages/Local.html">Local</a>
-                            </li>
-                            <li>
-                                <a href="./pages/Contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xs-3 col-lg-2 header__carrito">
-                    <ul class="carrito" >
-                        <li><a href="./pages/Carrito.html"><img src="./img/icono carrito.png" alt="Carrito" width="20px"></a></li>
-                        <li ><a href="./pages/Carrito.html"><img src="./img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-transparent ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img class="logo" src="./img/Logo.png" alt=""></a>
+                <form class="d-flex " role="search">
+                    <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar" >
+                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Local.html">Local</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </div>
+                <div class="header__div__carrito">
+                    <ul class="header__ul__carrito" >
+                        <li class="header__li__carrito"><a href="./pages/Carrito.html"><img src="./img/icono carrito.png" alt="Carrito" width="20px"></a></li>
+                        <li class="header__li__carrito"><a href="./pages/Carrito.html"><img src="./img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+<section>
+    <img src="./img/Portada Sarava.png" alt="Portada" width="100%">
+</section>
+<main>
+    <section class="container-fluid">
+        <div class="row">
+            <h2 class="col-xs-12 col-lg-12 subtitulo1">Lo mas vendido</h2>
+        </div>
+        <div class="row main__index__masvendido">
+            <article class="col-xs-2 col-lg-2 articulo">
+                <img src="./img/Cadena con Corazon.jpg" alt="collarcorazon" width="100px">
+                <p>Collar de plata con dije de cristal </p>
+                <h3>$ 15.000</h3>
+                <button>
+                    Agregar al Carrito
+                </button>
+            </article>
+            <article class="col-xs-2 col-lg-2 articulo">
+                <img src="./img/aros con brillos.jpg" alt="Arosconbrillos" width="100px" height="100px">
+                <p>Argollas pequeñas de plata con piedras </p>
+                <h3>
+                    $ 10.000
+                </h3>
+                <button>
+                    Agregar al Carrito
+                </button>
+            </article>
+            <article class="col-xs-2 col-lg-2 articulo">
+                <img src="./img/reloj inteligente.jpg" alt="Relojinteligente" width="100px" height="100px">
+                <p>Reloj inteligente para multifuncion </p>
+                <h3>
+                    $ 30.000
+                </h3>
+                <button>
+                    Agregar al Carrito
+                </button>
+            </article>
+        </div>
+        <div class="row">
+            <h2 class="col-xs-12 col-lg-12 subtitulo1">Categorias</h2>
+        </div>
+        <div class="row main__index__paginas">
+            <article class="col-xs-2 col-lg-2 main__index__categorias">
+                <div class="main__index__categorias__hover">
+                    <a href="./pages/Anillos.html"><img class="main__index__categorias__imagenes"
+                            src="./img/Categoria anillos.jpg" alt="Anillos">
+                        <div class="titulocategoria">
+                            <h4>Anillos</h4>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="col-xs-2 col-lg-2 main__index__categorias">
+                <div class="main__index__categorias__hover">
+                    <a href="./pages/Aros.html"><img class="main__index__categorias__imagenes"
+                            src="./img/Categoria Aros.jpg" alt="Aros">
+                        <div class="titulocategoria">
+                            <h4>Aros</h4>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="col-xs-2 col-lg-2 main__index__categorias">
+                <div class="main__index__categorias__hover">
+                    <a href="./pages/Cadenas.html"><img class="main__index__categorias__imagenes"
+                            src="./img/Categoria Collares.jpg" alt="Collares">
+                        <div class="titulocategoria">
+                            <h4>Cadenas</h4>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="col-xs-2 col-lg-2 main__index__categorias">
+                <div class="main__index__categorias__hover">
+                    <a href="./pages/Reloj.html"><img class="main__index__categorias__imagenes"
+                            src="./img/Categoria Reloj.jpg" alt="Reloj">
+                        <div class="titulocategoria">
+                            <h4>Reloj</h4>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+<footer>
+    <section class="container-fluid">
+        <div class="row">
+            <ul class="col-xs-4 col-lg-3 footer__lista__uno">
+                <li><img src="./img/icono telefono.png" alt="Numero" width="20px"> 5678-8976</li>
+                <li><a href="mailto:sarava@gmail.com"> <img src="./img/icono email.png" alt="Email" width="20px">
+                        sarava@gmail.com</a></li>
+                <li><img src="./img/icono ubicacion.png" alt="Ubicacion" width="20px"> Av. Rivadavia N°5527, CABA</li>
+            </ul>
+            <ul class="col-xs-4 col-lg-3 footer__lista__dos ">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/Contacto.html">Contacto</a></li>
+                <li><a href="./index.html">Volver Arriba</a></li>
+            </ul>
+            <div class="col-xs-8 col-lg-3 footer__lista__tres  ">
+                <h5>MEDIOS DE PAGO</h5>
+                <ul class="pagos">
+                    <li><img class="tarjeta" src="./img/icono mastercard.png" alt="Mastercard"></li>
+                    <li><img class="tarjeta" src="./img/icono visa.jpg" alt="Visa"></li>
+                    <li><img class="tarjeta" src="./img/icono mp.png" alt="MercadoPago" width="20px"></li>
+                </ul>
             </div>
         </div>
-    </header>
-    <section>
-        <img src="./img/Portada Sarava.png" alt="Portada" width="100%">
     </section>
-    <main >
-        <section class="container-fluid">
-            <div class="row">
-                <h2 class="col-xs-12 col-lg-12 subtitulo1">Lo mas vendido</h2>
-            </div>
-            <div class="row main__index__masvendido">
-                <article class="col-xs-2 col-lg-2 articulo" >
-                    <img src="./img/Cadena con Corazon.jpg" alt="collarcorazon" width="100px" >
-                    <p>Collar de plata con dije de cristal </p>
-                    <h3>$ 15.000</h3>
-                    <button>
-                        Agregar al Carrito
-                    </button>
-                </article>
-                <article class="col-xs-2 col-lg-2 articulo">
-                    <img src="./img/aros con brillos.jpg" alt="Arosconbrillos" width="100px" height="100px">
-                    <p>Argollas pequeñas de plata con piedras </p>
-                    <h3>
-                        $ 10.000
-                    </h3>
-                    <button>
-                        Agregar al Carrito
-                    </button>
-                </article>
-                <article class="col-xs-2 col-lg-2 articulo" >
-                    <img src="./img/reloj inteligente.jpg" alt="Relojinteligente" width="100px" height="100px">
-                    <p>Reloj inteligente para multifuncion </p>
-                    <h3>
-                        $ 30.000
-                    </h3>
-                    <button>
-                        Agregar al Carrito
-                    </button>
-                </article>
-            </div>
-            <div class="row">
-                <h2 class="col-xs-12 col-lg-12 subtitulo1" >Categorias</h2>
-            </div>
-            <div class="row main__index__paginas">
-                <article class="col-xs-2 col-lg-2 main__index__categorias">
-                    <div class="main__index__categorias__hover">
-                        <a href="./pages/Anillos.html"><img class="main__index__categorias__imagenes" src="./img/Categoria anillos.jpg" alt="Anillos" >
-                            <div class="titulocategoria"> 
-                                <h4 >Anillos</h4>
-                            </div>
-                        </a>
-                    </div>
-                </article>
-                <article class="col-xs-2 col-lg-2 main__index__categorias">
-                    <div class="main__index__categorias__hover">
-                        <a href="./pages/Aros.html"><img class="main__index__categorias__imagenes"  src="./img/Categoria Aros.jpg" alt="Aros" >
-                            <div class="titulocategoria">
-                                <h4 >Aros</h4>
-                            </div>     
-                        </a>          
-                    </div>
-                </article>
-                <article class="col-xs-2 col-lg-2 main__index__categorias">
-                    <div class="main__index__categorias__hover">
-                        <a href="./pages/Cadenas.html"><img class="main__index__categorias__imagenes"  src="./img/Categoria Collares.jpg" alt="Collares" >
-                            <div class="titulocategoria">
-                                <h4 >Cadenas</h4>
-                            </div>
-                        </a>
-                    </div>
-                </article>
-                <article class="col-xs-2 col-lg-2 main__index__categorias">
-                    <div class="main__index__categorias__hover">
-                        <a href="./pages/Reloj.html"><img class="main__index__categorias__imagenes" src="./img/Categoria Reloj.jpg" alt="Reloj" >
-                            <div class="titulocategoria">
-                                <h4 >Reloj</h4>
-                            </div>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer >
-        <section class="container-fluid">
-            <div class="row" >
-                <ul class="col-xs-4 col-lg-3 footer__lista__uno" >
-                    <li><img src="./img/icono telefono.png" alt="Numero" width="20px"> 5678-8976</li>
-                    <li><a href="mailto:sarava@gmail.com"> <img src="./img/icono email.png" alt="Email" width="20px"> sarava@gmail.com</a></li>
-                    <li><img src="./img/icono ubicacion.png" alt="Ubicacion" width="20px">  Av. Rivadavia N°5527, CABA</li>
-                </ul>
-                <ul class="col-xs-4 col-lg-3 footer__lista__dos ">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/Contacto.html">Contacto</a></li>
-                    <li><a href="./index.html">Volver Arriba</a></li>
-                </ul>
-                <div class="col-xs-8 col-lg-3 footer__lista__tres  ">
-                    <h5>MEDIOS DE PAGO</h5>
-                    <ul class="pagos" >
-                        <li><img class="tarjeta" src="./img/icono mastercard.png" alt="Mastercard" ></li>
-                        <li><img class="tarjeta" src="./img/icono visa.jpg" alt="Visa" ></li>
-                        <li><img class="tarjeta" src="./img/icono mp.png" alt="MercadoPago" width="20px" ></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </footer>
+</footer>
 </body>
+
 </html>

@@ -6,72 +6,50 @@
     font-family: 'JosefinSans';
     color: black;
 }
-
 body {
     background-color: #dcccc3;
 }
-
 header {
-    background-color: #D9B2A0;
+    background-color: #D9B2A0;    
+    justify-content: space-between;
+    align-items: end;
 }
-
 .logo {
     border-radius: 100px;
-    width:120px;
-}
-.encabezado {
-    display: flex;
-    flex-wrap:wrap ;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buscador {
-    text-align: center;
+    width:170px;
+    margin-right: 50px;
 }
 .header__imagen__lupa{
     width: 30px;
 }
-
-.padre {
-    align-items: center;
-    justify-items: center;
+.navbar-nav{
+    padding-left: 70px;
 }
-
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-li {
-    padding: 5px;
-
-}
-
-body header nav ul li {
+.nav-item {
     padding: 0 20px 0 20px;
     font-size: 15px;
+    text-align: end;
 }
-body header div nav ul li:hover{
-    transform:scale(1,1);
+.nav-item:hover{
+    transform:scale(1.2,1.2);
 }
-
-div nav ul li a{
+.nav-link{
     text-decoration: none;
     color: black;
     letter-spacing: 3px;
 }
-body header div nav ul li:hover a{
+.nav-item:hover .nav-link {
     color: white 
 }
 
-.carrito{
+.header__ul__carrito{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
+}
+.header__li__carrito{
+    padding: 10px;
 }
 
 
@@ -84,19 +62,14 @@ body header div nav ul li:hover a{
     text-align: center;
     align-content: center;
 }
-
 .main__index__masvendido{
     justify-content: space-evenly;
     display: flex;
     flex-wrap:wrap;
 }
-
 main section div article{
     justify-content: space-evenly;
 }
-
-
-
 .main__index__paginas{
 justify-content: space-evenly;
 display: flex;
@@ -106,25 +79,20 @@ padding-bottom: 100px;
 .main__index__categorias{
     text-align: center;
     font-style:italic ;
-    }
-
+}
 .main__index__categorias:hover{
     transform: scale(1.1);
 }
-
-
 .main__index__categorias__hover{
 width: 200px;
 height: 200px;
 position: relative;
 }
-
 .main__index__categorias__imagenes{
 height: 200px;
 width: 200px; 
 border: solid 2px black;
 }
-
 .titulocategoria{
 width: 0%;
 height: 100%;
@@ -136,9 +104,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: end;
 overflow: hidden;
-
 }
-
 .main__index__categorias:hover .titulocategoria{
     width: 100%;
 }
@@ -149,13 +115,10 @@ background-color: #D9B2A0;
 display: flex; 
 flex-wrap: wrap;
 padding-top: 15px ;
-
 }
 footer section div{
 justify-content: space-between;
 }
-
-
 footer section div ul{
     text-decoration: none;
     list-style: none;
@@ -164,7 +127,6 @@ footer section div ul{
 footer section div ul li img{
     margin-right: 20px;
 }
-
 .footer__lista__dos{
     margin-left: 100px;
     margin-right: 100px;
@@ -175,43 +137,29 @@ footer section div ul li img{
 footer section div ul li a{
     text-decoration: none;
     color: black;
-
 }
-
 footer section div h5{
     text-align: center;
 }
-
 .pagos{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-
 }
-
 .tarjeta{
     width: 50px;
     align-content: end;
-
 } 
 
 /*Pagina Local*/
-.main__local__titulo{
-    font-style: italic;
-    font-size: 40px;
-    margin: 0px 90px 0px 90px;
-    text-align: left;
-    font-weight: bold;
-}
+
 .ubicacion{
     padding-top: 20px;
-
 } 
 main section div div h3{
     font-weight: bold;
     font-size: 40px;
 }
-
 main section div div p{
     font-size: 25px;
 }
@@ -220,54 +168,24 @@ main section div div p{
     justify-content: end;
     align-items: end;
 }
-
 iframe { 
     margin-left: 300px;
     padding: 0;
     margin: 0;
-
 }
-
 .reloj {
 padding: 60px 0px;
 }
 
 /* Pagina Productos */
-.main__productos{
-    display: flex;
-}
-
-.main__productos__articulos {
-    width: 80%;
-}
-.main__productos__aside {
-    width: 20%;
-}
-
 .main__productos__listacategoria{
     list-style: none;
 }
-
-.articulosproductos{
-    width: 200px;
-    height: 270px;
-    margin: 10px;
-    padding: 5px; 
-    background-color: white;
-    border-radius: 5px;
-    border: solid 2px black;
-    text-align: center;
-}
-
-.tituloproductos{
-    font-size: 50px;
+.productos__aside__h3{
     font-weight: bold;
-    font-style: italic;
-    text-align: left;
-    margin-left: 40px;
 }
 
-/*Página de anillos, Aros, Cadenas, Productos, Reloj (Main)*/
+/*Página de Anillos, Aros, Cadenas, Productos, Reloj (Main)*/
 .titulos__paginas{
     font-style: italic;
     font-size: 40px;
@@ -276,88 +194,83 @@ padding: 60px 0px;
     font-weight: bold;
     
 }
-
+.main__productosycategorias {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.seccion__aside {
+    width: 20%;
+}
+.seccion__articulos {
+    width: 80%;
+}
 .filtros{
 background-color: #d9b2a091;
 padding: 20px 15px 20px 15px;
 width: 150px;
 }
-main section div aside h4{
+main section div aside h3{
     font-weight: bold;
 }
-    .listafiltros{ 
+.listafiltros{ 
     text-decoration: none;
     list-style: none;
     color: black;
-    
     text-align: start;
-    }
-    
-    .contenedor {
-        display: flex;
-    }
-    
-    .articuloscategorias {
-        flex: 1;
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-    
-    .articulo {
-        width: 200px;
-        height: 270px;
-        margin: 20px;
-        padding: 10px;
-        background-color: white;
-        border-radius: 5px;
-        border: solid 2px black;
-        text-align: center;
-        }
-    
-    h2 {
-        padding: 25px;
-    }
-    
-    /*Pagina Contacto*/
-    .maincontacto {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-    }
+}
+.div__contenedor {
+    display: flex;
+}
+.articulo {
+    width: 200px;
+    height: 270px;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 2px black;
+    text-align: center;
+}
+h2 {
+    padding: 25px;
+}
 
-    .datoscontacto {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border-right: 2px solid black;
-        width: 600px;
-        align-items:  start;
-        padding-left: 100px;
-    }
-    main section div div h3{
+/*Pagina Contacto*/
+.maincontacto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.datoscontacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-right: 2px solid black;
+    width: 600px;
+    align-items:  start;
+    padding-left: 100px;
+}
+main section div div h3{
         font-size: 30px;
-    }
-    .div-contacto {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+}
+.div-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 main section div div p a{
     color: black;
 }
-    
-    .datos-contacto {
-        padding: 15px;
-    }
-    
-    form ul {
-        list-style: none;
-        padding-top: 20px;
-    }
-
+.datos-contacto {
+    padding: 15px;
+}
+form ul li {
+    list-style: none;
+    padding-top: 20px;
+}
 main section div div h4{
     text-align: start;
     text-decoration: underline;
@@ -365,16 +278,14 @@ main section div div h4{
 main section div div p{
     text-align: start;
 }
-
-    .formulario {
-        text-align: center;
-        padding: 50px;
+.formulario {
+    text-align: center;
+    padding: 50px;
     }
 main section div div form ul li input{
     width: 100%;
     height: 40px;
 }
-
 main section div div form ul li button{
     width: 20%;
     height: 40px;
@@ -388,12 +299,10 @@ main section div div form ul li button{
     justify-content: space-between;
     align-items: center;
 }
-
 .carrito-arriba {
     border-bottom: solid 1px black;
     padding-bottom: 100px;
 }
-
 .textocarritoycorazon{
     font-style: normal;
     font-weight: bold;
@@ -402,53 +311,17 @@ main section div div form ul li button{
     margin: 0px 50px 10px 50px;
     text-align: center;
 }
-
 .botoncompras{
-width: 150px;
+    width: 150px;
 }
-
 .textoboton{
-text-decoration: none;
-color: black;
-font-size:xx-large;
-}
-/* Categoria Anillos */
-.main__anillos{
-display: flex;
+    text-decoration: none;
+    color: black;
+    font-size:xx-large;
 }
 
-.main__anillos__articulos {
-    width: 80%;
-}
-.main__anillos__aside {
-    width: 20%;
-}
-
-/* Categoria Aros */
-.main__aros{
-    display: flex;
-    }
-    
-    .main__aros__articulos {
-        width: 80%;
-    }
-    .main__aros__aside {
-        width: 20%;
-    }
 
 /*Categoria Cadenas */
-
-.main__cadenas{
-    display: flex;
-    }
-    
-    .main__cadenas__articulos {
-        width: 80%;
-    }
-    .main__cadenas__aside {
-        width: 20%;
-    }
-
 .listafiltrosCadenas{
 text-align: start;
 list-style: none;
@@ -457,25 +330,11 @@ width: 200px;
 
 
 /* Categoria Reloj */
-
-.main__reloj{
-display: flex;
-}
-
-.main__reloj__articulos {
-        width: 80%;
-    }
-.main__reloj__aside {
-width: 20%;
-}
-
 .filtroreloj{
-background-color: #d9b2a091;
-padding: 5px 5px 5px 5px;
-width: 150px;
-/* height: 380px; */
+    background-color: #d9b2a091;
+    padding: 5px 5px 5px 5px;
+    width: 150px;
 }
-
 .listafiltroreloj{
     text-decoration: none;
     list-style: none;
@@ -487,63 +346,62 @@ width: 150px;
 
 /* Diseño responsive-vista mobile */
 
-/* index */
-@media (max-width:600px) {
-    .logo{
-        width: 60px;
-    } 
-}
-@media (max-width:480px) {
+@media (max-width:576px) {
+/* Encabezado */
     header{
-        padding: 15px;
+        padding: 10px;
     }
     .logo{
-        width: 60px;
+        width: 150px;
+        margin-top: 40px;
     } 
-    .header__logo{
-        width: 80px;
-    }
-    .buscador{
-        width: 350px;
-        text-align: start;
-    }
-
-    .header__imagen__lupa{
+    body header .navbar div form .buscador{
         display: none;
     }
-
-    .header__menu{
-        width: 300px;
+    .navbar-toggler{
+        margin: 0px 50px 0px 50px ;
     }
-    .header__carrito{
-        width:150px;
+    .header__div__carrito{
+        margin-left: 370px;
     }
-    .menu{
-        padding-left: 0px;
-    }
-
-    body header nav ul li {
-        padding: 20px 5px 0px 0px;
-        font-size: 12px;
-        align-items: start;
-    }
-
-
-    .carrito{
-        justify-content: end;
-        width: 100px;
-
-    }
-/* portada sarava */
+    
+/* Portada sarava */
     section img{
         width:100%;
-        height: 300px;
+        height: 270px;
     }
-
     .subtitulo1{
-        font-size: 20px;
+        font-size: 35px;
     }
-/* main index */
+/* Footer */
+    footer section div {
+        margin: 0px;
+    }
+    footer section div ul li {
+        font-size: 15px; 
+    }
+    footer section div ul li img {
+        width: 15px;
+        height: 18px;
+    }
+    .footer__lista__uno{
+        width: 250px;
+    }
+    .footer__lista__dos{
+        margin: 0px;
+        width: 150px;
+    }
+    footer section div div h5 {
+        font-size: 25px;
+    }
+    .pagos{
+        justify-content: space-evenly;
+        }
+    .tarjeta{
+        width: 30px;
+        height: 25px;
+    }
+/* Main Pagina Index */
     main section div article img {
         width: 60px;
         height: 80px; ;
@@ -562,59 +420,45 @@ width: 150px;
     .main__index__categorias__hover{
         width: 200px;
         height: 200px;
-
     }
-        
     .main__index__categorias__imagenes{
         height: 200px;
         width: 200px; 
     }
-
-    /* Footer */
-    footer section div {
-        margin: 0px;
-    
+/* Main Pagina Productos */
+    .productos_aside__h3{
+        font-size: 20px;
+        font-weight: bold;
     }
-    footer section div ul li {
-        font-size: 10px; 
+    .filtros__productos__cel{
+        background-color: rgba(217, 178, 160, 0.76);
+        width: 300px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 90px;
+    }    
+    .listafiltros{ 
+        padding: 0px 10px 0px 10px;
+        color: black;
+        text-align: center;
+        }
+    .main__productos__listacategoria__cel{
+        display: flex;
+        list-style: none;
+        margin:0px 10px;
     }
-
-    footer section div ul li img {
-        width: 10px;
-        height: 10px;
+    .filtros__productos{
+        display: none;
     }
-    .footer__lista__uno{
-        width: 250px;
+    .main__productos__articulos{
+    margin-top: 100px;
+    justify-content: end;
     }
-    .footer__lista__dos{
-        margin: 0px;
-        width: 150px;
-    }
-    footer section div div h5 {
-        font-size: 12px;
-    }
-
-    .pagos{
-        justify-content: center;
-    }
-
-    .tarjeta{
-        width: 25px;
-        height: 20px;
-    }
-
-    /*Main pagina local */
+/*Main Pagina Local */
     .main__local__img{
         width: 40px;
         height: auto;
     }
-    .main__local__titulo{
-        text-align: start;
-        font-style: italic;
-        font-size: 35px;
-        font-weight: bold;
-    }
-
     .main__local__h3__ubicacionyhorario{
         font-size: 15px;
     }
@@ -623,8 +467,53 @@ width: 150px;
         height: auto;
         padding-left: 100px;
     }
-
     .main__local__p__ubicacionyhorario{
         font-size: 12px;
+    }
+/* Paginas Contacto */
+    .maincontacto section div div div img{
+        width: 40px;
+        height: 30px;
+    }
+    .datoscontacto {
+        border-right: none;
+    }
+    .datos-contacto h3{
+        font-size: 18px;
+    }
+    .div-contacto p {
+        font-size: 16px;
+    }
+    .formulario h3{
+        font-size: 18px;
+    }
+    .formulario p {
+        font-size: 16px;
+    }
+/* Paginas Anillos, Aros, Cadenas y Reloj */
+    .titulos__paginas{
+        font-size: 30px;
+        text-align: center;
+    }
+    .seccion__articulos{
+        padding-top: 10px;
+        padding-left: 80px;
+    }
+/* Titulos de las paginas */
+.titulos__paginas{
+    text-align: start;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: bold;
+}
+} 
+@media (min-width:577px) {
+/*Pagina Productos  */
+    .filtros__productos__cel{
+        display: none;
+    }
+/* Pagina Anillos */
+    .aside-cel {
+        display: none;
     }
 }

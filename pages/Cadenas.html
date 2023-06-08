@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,53 +10,55 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="container-fluid ">
-            <div class="row padre">
-                <div class="col-xs-2 col-lg-2 header__logo">
-                    <img class="logo" src="../img/Logo.png" alt="logo">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-transparent ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/Logo.png" alt=""></a>
+                <form class="d-flex " role="search">
+                    <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Local.html">Local</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-xs-4 col-lg-3 buscador " >
-                    <label for="buscador"><img class="header__imagen__lupa" src="../img/icono lupa.png" alt="iconolupa"></label>
-                    <input  type="text" name="buscador">
-                    <button >Buscar</button>
-                </div>
-                <div class="col-xs-7 col-lg-5 header__menu">
-                    <nav > 
-                        <ul class="menu">
-                            <li>
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="./Productos.html">Productos</a>
-                            </li>
-                            <li>
-                                <a href="./Local.html">Local</a>
-                            </li>
-                            <li>
-                                <a href="./Contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xs-3 col-lg-2 header__carrito">
-                    <ul class="carrito" >
-                        <li><a href="./Carrito.html"><img src="../img/icono carrito.png" alt="Carrito" width="20px"></a></li>
-                        <li ><a href="./Carrito.html"><img src="../img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
+                <div class="header__div__carrito">
+                    <ul class="header__ul__carrito">
+                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"
+                                    alt="Carrito" width="20px"></a></li>
+                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
+                                    alt="Favoritos" width="20px"></a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     <section>
         <img src="../img/Portada Sarava.png" alt="Portada" width="100%">
     </section>
-    <h2 class="titulos__paginas">Categoria: Cadenas</h2>
-    <main class="articuloscategorias main__cadenas">
-        <section class="container main__cadenas__aside">
-            <div class="row contenedor">
+    <h2 class="row titulos__paginas">Categoria: Cadenas</h2>
+    <main class="main__productosycategorias">
+        <section class="container seccion__aside">
+            <div class="row div__contenedor">
                 <aside class="col-3 filtros">
-                    <h4>Material</h4>
+                    <h3>Material</h3>
                     <ul class="listafiltrosCadenas">
                         <li>
                             Acero
@@ -66,7 +67,7 @@
                             plata
                         </li>
                     </ul>
-                    <h4>Tema</h4>
+                    <h3>Tema</h3>
                     <ul class="listafiltrosCadenas">
                         <li>
                             Con dije
@@ -77,9 +78,9 @@
                     </ul>
                 </aside>
         </section>
-        <section class="container main__cadenas__articulos">
+        <section class="container seccion__articulos">
             <div class="row">
-            <article class="col-2 articulo">
+            <article class=" articulo col-xs-2 col-lg-2">
                 <img src="../img/Cadena con Corazon.jpg" alt="Cadenacorazon" width="100px" height="100px">
                 <p>Cadena de plata con dije de corazon </p>
                 <h5>$ 9.000 </h5>
@@ -87,7 +88,7 @@
                     Agregar al Carrito
                 </button>
             </article>
-            <article class="col-2 articulo">
+            <article class=" articulo col-xs-2 col-lg-2">
                 <img src="../img/cadena clasica de acero.jpg" alt="Cadenasola" width="100px" height="100px">
                 <p>Cadena de acero clásica </p>
                 <h5>$ 5.000 </h5>
@@ -95,7 +96,7 @@
                     Agregar al Carrito
                 </button>
             </article>
-            <article class="col-2 articulo">
+            <article class="articulo col-xs-2 col-lg-2">
                 <img src="../img/cadena de plata fina.jpg" alt="Cadenaclasica" width="100px" height="100px">
                 <p>Cadena fina de plata clásica </p>
                 <h5>$ 8.000 </h5>
@@ -103,7 +104,7 @@
                     Agregar al Carrito
                 </button>
             </article>
-            <article class="col-2 articulo">
+            <article class="articulo col-xs-2 col-lg-2">
                 <img src="../img/cadena con dije de brillo.jpg" alt="Cadenabrillo" width="100px" height="100px">
                 <p>Cadena de plata con dije de estrella de brillo</p>
                 <h5>$ 12.000 </h5>
@@ -113,7 +114,7 @@
             </article>
             </div>
             <div class="row">
-                <article class="col-2 articulo">
+                <article class="articulo col-xs-2 col-lg-2">
                     <img src="../img/cadena con nombre.jpg" alt="CadenaNombre" width="100px" height="100px">
                     <p>Cadena de plata con dije de Nombre </p>
                     <h5>$ 9.000 </h5>
@@ -121,7 +122,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulo">
+                <article class="articulo col-xs-2 col-lg-2">
                     <img src="../img/collar de cruz.jpg" alt="Cadenacruz" width="100px" height="100px">
                     <p>Cadena de plata con cruz</p>
                     <h5>$ 7.000 </h5>
@@ -129,7 +130,7 @@
                         Agregar al Carrito
                     </button>
                 </article>
-                <article class="col-2 articulo">
+                <article class="articulo col-xs-2 col-lg-2">
                     <img src="../img/cadena acero con dije corazon.jpg" alt="Cadena de acero" width="100px" height="100px">
                     <p>Cadena de acero con dije de corazon </p>
                     <h5>$ 3.500 </h5>
