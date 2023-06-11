@@ -8,9 +8,8 @@ header {
         div{
             a{
                 .logo {
+                @include sizes(170px,0px 170px 0px 0px);
                 border-radius: 100px;
-                width:170px;
-                margin-right: 50px;
                 }
             }
             div{
@@ -37,7 +36,7 @@ header {
             }
             div{
                 .header__ul__carrito{
-                    @include flex-wrap;
+                    display: flex;
                     justify-content: space-evenly;
                     list-style: none;
                     .header__li__carrito{

@@ -13,9 +13,8 @@ main{
             align-items: center;
             .textocarritoycorazon{
                 @include bold-size;
+                @include sizes(300px,0px 50px 10px 50px );
                 font-style: normal;
-                width: 300px;
-                margin: 0px 50px 10px 50px;
                 text-align: center;
             }
             div{

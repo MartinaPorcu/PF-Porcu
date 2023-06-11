@@ -6,3 +6,7 @@
     font-size: 40px;
     font-weight: bold;
 }
+@mixin sizes($width,$margin){
+    width: $width;
+    margin: $margin;
+}

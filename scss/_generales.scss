@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Josefin Sans';
+    font-family:'Times New Roman', Times, serif;
     color: black;
 }
 body {
@@ -19,5 +19,13 @@ body {
     margin: 0px 90px 0px 90px;
     text-align: left;
     
+}
+
+/*botones de todos los articulos*/
+.botones__articulos{
+    border:1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    background-color:rgba($color: rgba(183, 176, 176, 0.747), $alpha: 7.0);
 }
 

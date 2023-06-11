@@ -24,10 +24,8 @@ footer {
                 }
             }
             .footer__lista__dos{
-                margin-left: 100px;
-                margin-right: 100px;
+                @include sizes(160px,0px 100px);
                 text-align: start;
-                width: 160px;
                 padding: 0px;
                 letter-spacing: 3px;
                 li{

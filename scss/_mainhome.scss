@@ -18,9 +18,8 @@ main{
                 justify-content: space-evenly;
             }
             .articulo {
-                width: 200px;
+                @include sizes(200px,20px);
                 height: 270px;
-                margin: 20px;
                 padding: 10px;
                 background-color: white;
                 border-radius: 5px;
@@ -36,7 +35,7 @@ main{
                 text-align: center;
                 font-style: $Estilo-fuente;
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1,1.1,1);
                 }
                 .main__index__categorias__hover {
                     width: 200px;
@@ -61,6 +60,8 @@ main{
                 }
                 &:hover .titulocategoria {
                     width: 100%;
+                    animation: fadeIn;                    ;
+                    animation-duration: 1.5s;
                 }
             }
         }
