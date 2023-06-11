@@ -1,3 +1,4 @@
+@import 'mixins';
 /*Pagina Carrito*/
 main{
     section{
@@ -6,15 +7,13 @@ main{
         padding-bottom: 100px;
         }
         .seccioncarrito{
+            @include flex-wrap;
             margin: 100px; 
-            display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             .textocarritoycorazon{
+                @include bold-size;
                 font-style: normal;
-                font-weight: bold;
-                font-size: 30px;
                 width: 300px;
                 margin: 0px 50px 10px 50px;
                 text-align: center;

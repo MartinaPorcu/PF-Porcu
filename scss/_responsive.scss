@@ -115,7 +115,7 @@ main{
             width: 300px;
             text-align: center;
             margin-bottom: 50px;
-            margin-left: 90px;
+            margin-left: 90px;               
             .productos_aside__h3{
                 font-size: 20px;
                 font-weight: bold;
@@ -129,6 +129,7 @@ main{
                         padding: 0px 10px 0px 10px;
                         color: black;
                         text-align: center;
+                        text-decoration: none;
                         }
                 }
             }
@@ -219,6 +220,35 @@ main{
         font-style: $Estilo-fuente;
         font-size: 35px;
         font-weight: bold;
+    }
+    /*Pagina Carrito*/
+    main{
+        section{
+            .seccioncarrito{
+                margin: 0px;
+                padding: 10px;;
+                justify-content: center;
+                img{
+                    width: 70px;
+                    height: 50px;
+                    margin-bottom: 30px ;
+                }
+                .textocarritoycorazon{
+                    font-size: 25px;
+                    margin-bottom: 30px;
+                }
+                div{
+                    text-align: center;
+                    .botoncompras{
+                        width: 90px;
+                        margin: 10px;
+                        .textoboton{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
     } 
     @media (min-width:577px) {

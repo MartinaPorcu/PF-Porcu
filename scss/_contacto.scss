@@ -1,30 +1,27 @@
 @import 'variables';
+@import 'mixins';
 
 /*Pagina Contacto*/
 .maincontacto {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex-wrap;
     margin-bottom: 50px;
     section{
         .titulos__paginas{
+            @include bold-size;
             font-style: $Estilo-fuente;
-            font-size: 40px;
             margin: 0px 90px 0px 90px;
             text-align: left;
-            font-weight: bold;
         }
         div{
             .datoscontacto {
-                display: flex;
-                flex-wrap: wrap;
+                @include flex-wrap;
                 flex-direction: column;
                 border-right: 2px solid black;
                 width: 600px;
                 align-items:  start;
                 padding-left: 100px;
                 .div-contacto {
-                    display: flex;
-                    flex-wrap: wrap;
+                    @include flex-wrap;
                     margin-top: 30px;
                     margin-bottom: 30px;
                     .datos-contacto {
@@ -36,8 +33,7 @@
                     }
                 }
                 .div-contacto {
-                    display: flex;
-                    flex-wrap: wrap;
+                    @include flex-wrap;
                     margin-top: 30px;
                     margin-bottom: 30px;
                     .datos-contacto {

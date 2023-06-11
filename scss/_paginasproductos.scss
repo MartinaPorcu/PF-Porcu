@@ -1,17 +1,16 @@
 /*Página de Anillos, Aros, Cadenas, Productos, Reloj (Main)*/
 .main__productosycategorias {
+    @include flex-wrap;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: start;
     .seccion__aside {
     width: 20%;
         .div__contenedor {
-            display: flex;
+            @include flex-wrap;
             .filtros{
                 background-color: #d9b2a091;
                 padding: 20px 15px 20px 15px;
-                width: 150px;
+                width: 180px;
                 h3{
                     font-weight: bold;
                 }
@@ -22,16 +21,12 @@
                     text-align: start;
                 }
                 .listafiltrosCadenas{
-                    text-align: start;
-                    list-style: none;
+                    @extend .listafiltros;
                     width: 200px;
                     } 
                 .listafiltroreloj{
-                    text-decoration: none;
-                    list-style: none;
-                    text-align: start;
-                    align-items: content;
-                    width: 200px;
+                    @extend .listafiltros;
+                    width: 150px;
                 }
             }
         }

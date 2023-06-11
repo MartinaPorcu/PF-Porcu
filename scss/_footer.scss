@@ -3,9 +3,8 @@
 
 /* Footer*/
 footer {
+    @include flex-wrap;
     background-color: $color-fondo;
-    display: flex; 
-    flex-wrap: wrap;
     padding-top: 15px ;
     section{
         div{
@@ -45,7 +44,7 @@ footer {
                     text-align: center;
                 }
                 .pagos{
-                    display: flex;
+                    @include flex-wrap;
                     justify-content: space-between;
                     padding: 10px;
                     li{

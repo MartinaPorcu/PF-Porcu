@@ -1,0 +1,8 @@
+@mixin flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin bold-size{
+    font-size: 40px;
+    font-weight: bold;
+}

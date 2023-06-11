@@ -1,20 +1,21 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap"); /*Pagina Carrito*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+/*Pagina Carrito*/
 main section .carrito-arriba {
   border-bottom: solid 1px black;
   padding-bottom: 100px;
 }
 main section .seccioncarrito {
-  margin: 100px;
   display: flex;
   flex-wrap: wrap;
+  margin: 100px;
   justify-content: space-between;
   align-items: center;
 }
 main section .seccioncarrito .textocarritoycorazon {
-  font-style: normal;
+  font-size: 40px;
   font-weight: bold;
-  font-size: 30px;
+  font-style: normal;
   width: 300px;
   margin: 0px 50px 10px 50px;
   text-align: center;
@@ -36,11 +37,11 @@ main section .seccioncarrito div .botoncompras .textoboton {
   margin-bottom: 50px;
 }
 .maincontacto section .titulos__paginas {
-  font-style: italic;
   font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
   margin: 0px 90px 0px 90px;
   text-align: left;
-  font-weight: bold;
 }
 .maincontacto section div .datoscontacto {
   display: flex;
@@ -106,9 +107,9 @@ main section .seccioncarrito div .botoncompras .textoboton {
 
 /* Footer*/
 footer {
-  background-color: #D9B2A0;
   display: flex;
   flex-wrap: wrap;
+  background-color: #D9B2A0;
   padding-top: 15px;
 }
 footer section div {
@@ -145,6 +146,7 @@ footer section div .footer__lista__tres h5 {
 }
 footer section div .footer__lista__tres .pagos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
 }
@@ -156,7 +158,7 @@ footer section div .footer__lista__tres .pagos li .tarjeta {
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "JosefinSans";
+  font-family: "Josefin Sans";
   color: black;
 }
 
@@ -164,13 +166,17 @@ body {
   background-color: #dcccc3;
 }
 
+.portada {
+  margin-bottom: 40px;
+}
+
 /*titulos de cada pagina*/
 .titulos__paginas {
-  font-style: italic;
   font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
   margin: 0px 90px 0px 90px;
   text-align: left;
-  font-weight: bold;
 }
 
 /*Encabezado*/
@@ -215,24 +221,25 @@ header nav div div .header__ul__carrito .header__li__carrito {
 
 /*Pagina Local*/
 main section div .titulos__paginas {
-  font-style: italic;
   font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
   margin: 0px 90px 0px 90px;
   text-align: left;
-  font-weight: bold;
 }
 main section div .ubicacion {
   padding-top: 20px;
 }
 main section div .ubicacion h3 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
 }
 main section div .ubicacion p {
   font-size: 25px;
 }
 main section div .mapa {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
   align-items: end;
 }
@@ -246,7 +253,7 @@ main section .reloj {
 }
 main section .reloj div h3 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
 }
 main section .reloj div p {
   font-size: 25px;
@@ -254,17 +261,17 @@ main section .reloj div p {
 
 /*Main de index*/
 main section div .subtitulo1 {
-  margin: 20px;
   font-size: 40px;
   font-weight: bold;
+  margin: 20px;
   font-style: italic;
   text-align: center;
   align-content: center;
 }
 main section .main__index__masvendido {
-  justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 main section .main__index__masvendido article {
   justify-content: space-evenly;
@@ -280,9 +287,9 @@ main section .main__index__masvendido .articulo {
   text-align: center;
 }
 main section .main__index__paginas {
-  justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-bottom: 100px;
 }
 main section .main__index__paginas .main__index__categorias {
@@ -303,13 +310,13 @@ main section .main__index__paginas .main__index__categorias .main__index__catego
   border: solid 2px black;
 }
 main section .main__index__paginas .main__index__categorias .main__index__categorias__hover .titulocategoria {
+  display: flex;
+  flex-wrap: wrap;
   width: 0%;
   height: 100%;
   background-color: rgba(199, 129, 84, 0.7);
   position: absolute;
   top: 0;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: end;
   overflow: hidden;
@@ -320,9 +327,9 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
 
 /*Página de Anillos, Aros, Cadenas, Productos, Reloj (Main)*/
 .main__productosycategorias {
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
   justify-content: start;
 }
 .main__productosycategorias .seccion__aside {
@@ -330,32 +337,27 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
 }
 .main__productosycategorias .seccion__aside .div__contenedor {
   display: flex;
+  flex-wrap: wrap;
 }
 .main__productosycategorias .seccion__aside .div__contenedor .filtros {
   background-color: rgba(217, 178, 160, 0.568627451);
   padding: 20px 15px 20px 15px;
-  width: 150px;
+  width: 180px;
 }
 .main__productosycategorias .seccion__aside .div__contenedor .filtros h3 {
   font-weight: bold;
 }
-.main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltros {
+.main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltros, .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltroreloj, .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltrosCadenas {
   text-decoration: none;
   list-style: none;
   color: black;
   text-align: start;
 }
 .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltrosCadenas {
-  text-align: start;
-  list-style: none;
   width: 200px;
 }
 .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltroreloj {
-  text-decoration: none;
-  list-style: none;
-  text-align: start;
-  align-items: content;
-  width: 200px;
+  width: 150px;
 }
 .main__productosycategorias .seccion__aside .filtros {
   background-color: rgba(217, 178, 160, 0.568627451);
@@ -368,7 +370,7 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
 .main__productosycategorias .seccion__aside .filtros .main__productos__listacategoria {
   list-style: none;
 }
-.main__productosycategorias .seccion__aside .filtros .main__productos__listacategoria .listafiltros {
+.main__productosycategorias .seccion__aside .filtros .main__productos__listacategoria .listafiltros, .main__productosycategorias .seccion__aside .div__contenedor .filtros .main__productos__listacategoria .listafiltrosCadenas, .main__productosycategorias .seccion__aside .div__contenedor .filtros .main__productos__listacategoria .listafiltroreloj {
   text-decoration: none;
   list-style: none;
   color: black;
@@ -484,10 +486,11 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
     list-style: none;
     margin: 0px 10px;
   }
-  main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltros {
+  main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltros, main section .filtros__productos__cel .main__productos__listacategoria__cel li .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltrosCadenas, .main__productosycategorias .seccion__aside .div__contenedor .filtros main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltrosCadenas, main section .filtros__productos__cel .main__productos__listacategoria__cel li .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltroreloj, .main__productosycategorias .seccion__aside .div__contenedor .filtros main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltroreloj {
     padding: 0px 10px 0px 10px;
     color: black;
     text-align: center;
+    text-decoration: none;
   }
   main section .filtros__productos {
     display: none;
@@ -547,6 +550,31 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
     font-style: italic;
     font-size: 35px;
     font-weight: bold;
+  }
+  /*Pagina Carrito*/
+  main section .seccioncarrito {
+    margin: 0px;
+    padding: 10px;
+    justify-content: center;
+  }
+  main section .seccioncarrito img {
+    width: 70px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  main section .seccioncarrito .textocarritoycorazon {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  main section .seccioncarrito div {
+    text-align: center;
+  }
+  main section .seccioncarrito div .botoncompras {
+    width: 90px;
+    margin: 10px;
+  }
+  main section .seccioncarrito div .botoncompras .textoboton {
+    font-size: 15px;
   }
 }
 @media (min-width: 577px) {

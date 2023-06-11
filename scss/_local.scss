@@ -4,11 +4,10 @@ main{
     section{
         div{
             .titulos__paginas{
+                @include bold-size;
                 font-style: $Estilo-fuente;
-                font-size: 40px;
                 margin: 0px 90px 0px 90px;
                 text-align: left;
-                font-weight: bold;
                 }
         }
         div{
@@ -16,14 +15,14 @@ main{
                 padding-top: 20px;
                 h3{
                     font-weight: bold;
-                    font-size: 40px;
+                    font-size: 30px;
                 }
                 p{
                     font-size: 25px;
                 }
             }
             .mapa {
-                display: flex;
+                @include flex-wrap;
                 justify-content: end;
                 align-items: end;
                 iframe { 
@@ -38,7 +37,7 @@ main{
             div{
                 h3{
                     font-weight: bold;
-                    font-size: 40px;
+                    font-size: 30px;
                 }
                 p{
                     font-size: 25px;

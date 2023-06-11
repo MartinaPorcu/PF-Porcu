@@ -1,21 +1,23 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'JosefinSans';
+    font-family: 'Josefin Sans';
     color: black;
 }
 body {
     background-color: #dcccc3;
 }
 
+.portada{
+    margin-bottom: 40px;
+}
 
 /*titulos de cada pagina*/
 .titulos__paginas{
+    @include bold-size;
     font-style: $Estilo-fuente;
-    font-size: 40px;
     margin: 0px 90px 0px 90px;
     text-align: left;
-    font-weight: bold;
     
 }
 

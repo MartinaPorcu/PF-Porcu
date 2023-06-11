@@ -3,9 +3,8 @@ main{
     section{
         div{
             .subtitulo1{
+            @include bold-size;
             margin: 20px;
-            font-size: 40px;
-            font-weight: bold;
             font-style: italic;
             text-align: center;
             align-content: center;
@@ -13,9 +12,8 @@ main{
         }
         }
         .main__index__masvendido{
+            @include flex-wrap;
             justify-content: space-evenly;
-            display: flex;
-            flex-wrap:wrap;
             article{
                 justify-content: space-evenly;
             }
@@ -31,9 +29,8 @@ main{
             }
         }
         .main__index__paginas{
+            @include flex-wrap;
             justify-content: space-evenly;
-            display: flex;
-            flex-wrap: wrap;
             padding-bottom: 100px;
             .main__index__categorias {
                 text-align: center;
@@ -51,13 +48,12 @@ main{
                         border: solid 2px black;
                     }
                     .titulocategoria {
+                        @include flex-wrap;
                         width: 0%;
                         height: 100%;
                         background-color: rgba(199, 129, 84, 0.7);
                         position: absolute;
                         top: 0;
-                        display: flex;
-                        flex-wrap: wrap;
                         justify-content: center;
                         align-items: end;
                         overflow: hidden;

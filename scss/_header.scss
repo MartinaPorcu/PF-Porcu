@@ -37,8 +37,7 @@ header {
             }
             div{
                 .header__ul__carrito{
-                    display: flex;
-                    flex-wrap: wrap;
+                    @include flex-wrap;
                     justify-content: space-evenly;
                     list-style: none;
                     .header__li__carrito{
