@@ -1,0 +1,49 @@
+/*Pagina Local*/
+
+main{
+    section{
+        div{
+            .titulos__paginas{
+                font-style: $Estilo-fuente;
+                font-size: 40px;
+                margin: 0px 90px 0px 90px;
+                text-align: left;
+                font-weight: bold;
+                }
+        }
+        div{
+            .ubicacion{
+                padding-top: 20px;
+                h3{
+                    font-weight: bold;
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .mapa {
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                iframe { 
+                    margin-left: 300px;
+                    padding: 0;
+                    margin: 0;
+                }
+            } 
+        }
+        .reloj {
+            padding: 60px 0px;
+            div{
+                h3{
+                    font-weight: bold;
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            }
+    }
+}

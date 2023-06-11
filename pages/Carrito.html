@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SARAVA</title>
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <script src="../js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-transparent ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/Logo.png" alt=""></a>
-                    <form class="d-flex " role="search">
-                        <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                        <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Local.html">Local</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header__div__carrito">
-                        <ul class="header__ul__carrito">
-                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"
-                                        alt="Carrito" width="20px"></a></li>
-                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
-                                        alt="Favoritos" width="20px"></a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta seccion podes encontrar tanto como tus productos favoritos asi como tus productos elegidos para comprar.">
+    <meta name="keywords" content="compras,favoritos,mejores productos, aros,cadenas,reloj,anillos">
+    <title>Sarava-Compras</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-transparent ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/Logo.png" alt=""></a>
+                <form class="d-flex " role="search">
+                    <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Local.html">Local</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <section>
-            <img src="../img/Portada Sarava.png" alt="Portada" width="100%">
-        </section>
-    <main>
-    <section class="container-fluid">
-        <div class=" row seccioncarrito carrito-arriba"> 
-            <img class="col-2" src="../img/icono carrito.png" alt="IconoCarrito" width="5px" height="150px" >
-            <h3 class=" col-2 textocarritoycorazon">Tu Carrito está vacío</h3>
-            <div class="col-2">
-                <button class="botoncompras">
-                    <a class="textoboton" href="./Productos.html">Comprar</a>
-                </button>
+                <div class="header__div__carrito">
+                    <ul class="header__ul__carrito">
+                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"
+                                    alt="Carrito" width="20px"></a></li>
+                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
+                                    alt="Favoritos" width="20px"></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="row seccioncarrito">
-            <img class="col-2" src="../img/icono corazon.png" alt="IconoCorazon" width="5px" height="150px">
-            <h3 class="col-2 textocarritoycorazon">Aún no tienes favoritos</h3>
-            <div class="col-2">
-                <button class="botoncompras">
-                    <a class="textoboton" href="./Productos.html">Ver Productos</a>
-                </button>
-            </div>
-        </div>
+        </nav>
+    </header>
+    <section>
+        <img src="../img/Portada Sarava.png" alt="Portada" width="100%">
     </section>
-    </main>
-    <footer >
+    <main>
         <section class="container-fluid">
-            <div class="row" >
-                <ul class="col-xs-4 col-lg-3 footer__lista__uno" >
+            <div class=" row seccioncarrito carrito-arriba">
+                <img class="col-2" src="../img/icono carrito.png" alt="IconoCarrito" width="5px" height="150px">
+                <h3 class=" col-2 textocarritoycorazon">Tu Carrito está vacío</h3>
+                <div class="col-2">
+                    <button class="botoncompras">
+                        <a class="textoboton" href="./Productos.html">Comprar</a>
+                    </button>
+                </div>
+            </div>
+            <div class="row seccioncarrito">
+                <img class="col-2" src="../img/icono corazon.png" alt="IconoCorazon" width="5px" height="150px">
+                <h3 class="col-2 textocarritoycorazon">Aún no tienes favoritos</h3>
+                <div class="col-2">
+                    <button class="botoncompras">
+                        <a class="textoboton" href="./Productos.html">Ver Productos</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container-fluid">
+            <div class="row">
+                <ul class="col-xs-4 col-lg-3 footer__lista__uno">
                     <li><img src="../img/icono telefono.png" alt="Numero" width="20px"> 5678-8976</li>
-                    <li><a href="mailto:sarava@gmail.com"> <img src="../img/icono email.png" alt="Email" width="20px"> sarava@gmail.com</a></li>
-                    <li><img src="../img/icono ubicacion.png" alt="Ubicacion" width="20px">  Av. Rivadavia N°5527, CABA</li>
+                    <li><a href="mailto:sarava@gmail.com"> <img src="../img/icono email.png" alt="Email" width="20px">
+                            sarava@gmail.com</a></li>
+                    <li><img src="../img/icono ubicacion.png" alt="Ubicacion" width="20px"> Av. Rivadavia N°5527, CABA
+                    </li>
                 </ul>
                 <ul class="col-xs-4 col-lg-3 footer__lista__dos ">
                     <li><a href="../index.html">Home</a></li>
@@ -90,14 +96,15 @@
                 </ul>
                 <div class="col-xs-8 col-lg-3 footer__lista__tres  ">
                     <h5>MEDIOS DE PAGO</h5>
-                    <ul class="pagos" >
-                        <li><img class="tarjeta" src="../img/icono mastercard.png" alt="Mastercard" ></li>
-                        <li><img class="tarjeta" src="../img/icono visa.jpg" alt="Visa" ></li>
-                        <li><img class="tarjeta" src="../img/icono mp.png" alt="MercadoPago" width="20px" ></li>
+                    <ul class="pagos">
+                        <li><img class="tarjeta" src="../img/icono mastercard.png" alt="Mastercard"></li>
+                        <li><img class="tarjeta" src="../img/icono visa.jpg" alt="Visa"></li>
+                        <li><img class="tarjeta" src="../img/icono mp.png" alt="MercadoPago" width="20px"></li>
                     </ul>
                 </div>
             </div>
         </section>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,71 @@
+/*Página de Anillos, Aros, Cadenas, Productos, Reloj (Main)*/
+.main__productosycategorias {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    .seccion__aside {
+    width: 20%;
+        .div__contenedor {
+            display: flex;
+            .filtros{
+                background-color: #d9b2a091;
+                padding: 20px 15px 20px 15px;
+                width: 150px;
+                h3{
+                    font-weight: bold;
+                }
+                .listafiltros{ 
+                    text-decoration: none;
+                    list-style: none;
+                    color: black;
+                    text-align: start;
+                }
+                .listafiltrosCadenas{
+                    text-align: start;
+                    list-style: none;
+                    width: 200px;
+                    } 
+                .listafiltroreloj{
+                    text-decoration: none;
+                    list-style: none;
+                    text-align: start;
+                    align-items: content;
+                    width: 200px;
+                }
+            }
+        }
+        .filtros{
+            background-color: #d9b2a091;
+            padding: 20px 15px 20px 15px;
+            width: 180px;
+            .productos__aside__h3{
+                font-weight: bold;
+            }
+            .main__productos__listacategoria{
+                list-style: none;
+                .listafiltros{ 
+                    text-decoration: none;
+                    list-style: none;
+                    color: black;
+                    text-align: start;
+                }              
+            }
+        }
+    }
+    .seccion__articulos {
+        width: 80%;
+        div{
+            .articulo {
+                width: 200px;
+                height: 270px;
+                margin: 20px;
+                padding: 10px;
+                background-color: white;
+                border-radius: 5px;
+                border: solid 2px black;
+                text-align: center;
+            }
+        }
+    }
+}

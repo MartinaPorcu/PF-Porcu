@@ -1,0 +1,234 @@
+/* Diseño responsive-vista mobile */
+
+@media (max-width:576px) {
+    /* Encabezado */
+        header{
+            padding: 10px;
+            div{
+                a{
+                    .logo{
+                        width: 150px;
+                        margin-top: 40px;
+                    } 
+                }
+                form{
+                    .buscador{
+                        display: none;
+                    }
+                }
+                .navbar-toggler{
+                    margin: 0px 50px 0px 50px ;
+                }
+                .header__div__carrito{
+                    margin-left: 370px;
+                }
+            }
+        }
+        
+    /* Portada sarava */
+        section img{
+            width:100%;
+            height: 270px;
+        }
+        .subtitulo1{
+            font-size: 35px;
+        }
+    /* Footer */
+        footer{
+            section{
+                div {
+                    margin: 0px;
+                    ul{
+                        li{
+                            font-size: 15px;
+                            img {
+                                width: 15px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                    .footer__lista__uno{
+                        width: 250px;
+                    }
+                    .footer__lista__dos{
+                        margin: 0px;
+                        width: 150px;
+                    }
+                    div{
+                        h5 {
+                            font-size: 25px;
+                        }
+                        .pagos{
+                            justify-content: space-evenly;
+                            li{
+                                .tarjeta{
+                                    width: 30px;
+                                    height: 25px;
+                                }
+                            }
+                            }
+                    }
+                }
+            }
+        }
+
+    /* Main Pagina Index */
+        main {
+            section{
+                div{
+                    .articulo{
+                        width: 300px;
+                        height: 250px;
+                        img {
+                            width: 60px;
+                            height: 80px; ;
+                        }
+                    }
+                }
+                .main__index__paginas{
+                    padding-right: 20px;
+                    .main__index__categorias{
+                        width: 200px;
+                        padding: 20px;
+                        .main__index__categorias__hover{
+                            width: 200px;
+                            height: 200px;
+                            a{
+                                .main__index__categorias__imagenes{
+                                    height: 200px;
+                                    width: 200px; 
+                                }
+                            }
+                            }                        
+                        }
+                }
+            }
+        }
+
+
+
+    /* Main Pagina Productos */
+main{
+    section{
+        .filtros__productos__cel{
+            background-color: rgba(217, 178, 160, 0.76);
+            width: 300px;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-left: 90px;
+            .productos_aside__h3{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .main__productos__listacategoria__cel{
+                display: flex;
+                list-style: none;
+                margin:0px 10px;
+                li{
+                    .listafiltros{ 
+                        padding: 0px 10px 0px 10px;
+                        color: black;
+                        text-align: center;
+                        }
+                }
+            }
+        }
+        .filtros__productos{
+            display: none;
+        }
+    }
+    .main__productos__articulos{
+        margin-top: 100px;
+        justify-content: end;
+        }
+}
+
+
+    /*Main Pagina Local */
+    main{
+        section{
+            div{
+                div{
+                    .main__local__img{
+                        width: 40px;
+                        height: auto;
+                    }
+                    .main__local__h3__ubicacionyhorario{
+                        font-size: 15px;
+                    }
+                    .main__local__p__ubicacionyhorario{
+                        font-size: 12px;
+                    }
+                }
+                .mapa{
+                    width: 300px;
+                    height: auto;
+                    padding-left: 100px;
+                }        
+            }
+        }
+    }
+
+
+
+    /* Paginas Contacto */
+    .maincontacto{
+        section{
+            div{
+                .datoscontacto {
+                    border-right: none;
+                    div{
+                        img{
+                            width: 40px;
+                            height: 30px;
+                        }
+                        .datos-contacto{
+                            h3{
+                                font-size: 18px;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .formulario{
+                    h3{
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                } 
+            }
+        }
+    }
+
+    /* Paginas Anillos, Aros, Cadenas y Reloj */
+        .titulos__paginas{
+            font-size: 30px;
+            text-align: center;
+        }
+        .seccion__articulos{
+            padding-top: 10px;
+            padding-left: 80px;
+        }
+    /* Titulos de las paginas */
+    .titulos__paginas{
+        text-align: start;
+        font-style: $Estilo-fuente;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    } 
+    @media (min-width:577px) {
+    /*Pagina Productos  */
+        .filtros__productos__cel{
+            display: none;
+        }
+    /* Pagina Anillos */
+        .aside-cel {
+            display: none;
+        }
+    }
+    

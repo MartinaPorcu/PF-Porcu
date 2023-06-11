@@ -1,519 +1,564 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'JosefinSans';
-    color: black;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap"); /*Pagina Carrito*/
+main section .carrito-arriba {
+  border-bottom: solid 1px black;
+  padding-bottom: 100px;
 }
-body {
-    background-color: #dcccc3;
+main section .seccioncarrito {
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-header {
-    background-color: #D9B2A0;    
-    justify-content: space-between;
-    align-items: end;
+main section .seccioncarrito .textocarritoycorazon {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  width: 300px;
+  margin: 0px 50px 10px 50px;
+  text-align: center;
 }
-.logo {
-    border-radius: 100px;
-    width:170px;
-    margin-right: 50px;
+main section .seccioncarrito div .botoncompras {
+  width: 150px;
 }
-.header__imagen__lupa{
-    width: 30px;
-}
-.navbar-nav{
-    padding-left: 70px;
-}
-.nav-item {
-    padding: 0 20px 0 20px;
-    font-size: 15px;
-    text-align: end;
-}
-.nav-item:hover{
-    transform:scale(1.2,1.2);
-}
-.nav-link{
-    text-decoration: none;
-    color: black;
-    letter-spacing: 3px;
-}
-.nav-item:hover .nav-link {
-    color: white 
+main section .seccioncarrito div .botoncompras .textoboton {
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
 }
 
-.header__ul__carrito{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
+/*Variables*/
+/*Pagina Contacto*/
+.maincontacto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-.header__li__carrito{
-    padding: 10px;
+.maincontacto section .titulos__paginas {
+  font-style: italic;
+  font-size: 40px;
+  margin: 0px 90px 0px 90px;
+  text-align: left;
+  font-weight: bold;
 }
-
-
-/*Main de index*/
-.subtitulo1{
-    margin: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    align-content: center;
+.maincontacto section div .datoscontacto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-right: 2px solid black;
+  width: 600px;
+  align-items: start;
+  padding-left: 100px;
 }
-.main__index__masvendido{
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap:wrap;
+.maincontacto section div .datoscontacto .div-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-main section div article{
-    justify-content: space-evenly;
+.maincontacto section div .datoscontacto .div-contacto .datos-contacto {
+  padding: 15px;
 }
-.main__index__paginas{
-justify-content: space-evenly;
-display: flex;
-flex-wrap: wrap;
-padding-bottom: 100px;
+.maincontacto section div .datoscontacto .div-contacto .datos-contacto h3 {
+  font-size: 30px;
+  font-weight: bold;
 }
-.main__index__categorias{
-    text-align: center;
-    font-style:italic ;
+.maincontacto section div .datoscontacto .div-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.main__index__categorias:hover{
-    transform: scale(1.1);
+.maincontacto section div .datoscontacto .div-contacto .datos-contacto {
+  padding: 15px;
 }
-.main__index__categorias__hover{
-width: 200px;
-height: 200px;
-position: relative;
+.maincontacto section div .datoscontacto .div-contacto .datos-contacto h3 {
+  font-size: 30px;
+  font-weight: bold;
 }
-.main__index__categorias__imagenes{
-height: 200px;
-width: 200px; 
-border: solid 2px black;
+.maincontacto section div .datoscontacto .div-contacto .datos-contacto p a {
+  color: black;
 }
-.titulocategoria{
-width: 0%;
-height: 100%;
-background-color: rgba(199,129, 84, 0.7);
-position: absolute;
-top: 0;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: end;
-overflow: hidden;
+.maincontacto section div .formulario {
+  text-align: center;
+  padding: 50px;
 }
-.main__index__categorias:hover .titulocategoria{
-    width: 100%;
+.maincontacto section div .formulario h3 {
+  text-align: start;
+  text-decoration: underline;
+}
+.maincontacto section div .formulario p {
+  text-align: start;
+}
+.maincontacto section div .formulario form ul li {
+  list-style: none;
+  padding-top: 20px;
+}
+.maincontacto section div .formulario form ul li input {
+  width: 100%;
+  height: 40px;
+}
+.maincontacto section div .formulario form ul li button {
+  width: 20%;
+  height: 40px;
 }
 
 /* Footer*/
 footer {
-background-color: #D9B2A0;
-display: flex; 
-flex-wrap: wrap;
-padding-top: 15px ;
+  background-color: #D9B2A0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
 }
-footer section div{
-justify-content: space-between;
+footer section div {
+  justify-content: space-between;
 }
-footer section div ul{
-    text-decoration: none;
-    list-style: none;
-    padding-right: 200px;
+footer section div ul {
+  text-decoration: none;
+  list-style: none;
+  padding-right: 200px;
 }
-footer section div ul li img{
-    margin-right: 20px;
+footer section div ul li img {
+  margin-right: 20px;
 }
-.footer__lista__dos{
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: start;
-    width: 160px;
-    padding: 0px;
+footer section div ul li a {
+  text-decoration: none;
+  color: black;
 }
-footer section div ul li a{
-    text-decoration: none;
-    color: black;
+footer section div .footer__lista__dos {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: start;
+  width: 160px;
+  padding: 0px;
+  letter-spacing: 3px;
 }
-footer section div h5{
-    text-align: center;
+footer section div .footer__lista__dos li:hover {
+  transform: scale(1.2, 1.2);
 }
-.pagos{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+footer section div .footer__lista__dos li:hover a {
+  color: white;
 }
-.tarjeta{
-    width: 50px;
-    align-content: end;
-} 
+footer section div .footer__lista__tres h5 {
+  text-align: center;
+}
+footer section div .footer__lista__tres .pagos {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer section div .footer__lista__tres .pagos li .tarjeta {
+  width: 50px;
+  align-content: end;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "JosefinSans";
+  color: black;
+}
+
+body {
+  background-color: #dcccc3;
+}
+
+/*titulos de cada pagina*/
+.titulos__paginas {
+  font-style: italic;
+  font-size: 40px;
+  margin: 0px 90px 0px 90px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/*Encabezado*/
+header {
+  background-color: #D9B2A0;
+  justify-content: space-between;
+  align-items: end;
+}
+header nav div a .logo {
+  border-radius: 100px;
+  width: 170px;
+  margin-right: 50px;
+}
+header nav div div .navbar-nav {
+  padding-left: 70px;
+}
+header nav div div .navbar-nav .nav-item {
+  padding: 0 20px 0 20px;
+  font-size: 15px;
+  text-align: end;
+}
+header nav div div .navbar-nav .nav-item:hover {
+  transform: scale(1.2, 1.2);
+}
+header nav div div .navbar-nav .nav-item:hover .nav-link {
+  color: white;
+}
+header nav div div .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+}
+header nav div div .header__ul__carrito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header nav div div .header__ul__carrito .header__li__carrito {
+  padding: 10px;
+}
 
 /*Pagina Local*/
+main section div .titulos__paginas {
+  font-style: italic;
+  font-size: 40px;
+  margin: 0px 90px 0px 90px;
+  text-align: left;
+  font-weight: bold;
+}
+main section div .ubicacion {
+  padding-top: 20px;
+}
+main section div .ubicacion h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+main section div .ubicacion p {
+  font-size: 25px;
+}
+main section div .mapa {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+main section div .mapa iframe {
+  margin-left: 300px;
+  padding: 0;
+  margin: 0;
+}
+main section .reloj {
+  padding: 60px 0px;
+}
+main section .reloj div h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+main section .reloj div p {
+  font-size: 25px;
+}
 
-.ubicacion{
-    padding-top: 20px;
-} 
-main section div div h3{
-    font-weight: bold;
-    font-size: 40px;
+/*Main de index*/
+main section div .subtitulo1 {
+  margin: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
 }
-main section div div p{
-    font-size: 25px;
+main section .main__index__masvendido {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
 }
-.mapa {
-    display: flex;
-    justify-content: end;
-    align-items: end;
+main section .main__index__masvendido article {
+  justify-content: space-evenly;
 }
-iframe { 
-    margin-left: 300px;
-    padding: 0;
-    margin: 0;
+main section .main__index__masvendido .articulo {
+  width: 200px;
+  height: 270px;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 2px black;
+  text-align: center;
 }
-.reloj {
-padding: 60px 0px;
+main section .main__index__paginas {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
 }
-
-/* Pagina Productos */
-.main__productos__listacategoria{
-    list-style: none;
+main section .main__index__paginas .main__index__categorias {
+  text-align: center;
+  font-style: italic;
 }
-.productos__aside__h3{
-    font-weight: bold;
+main section .main__index__paginas .main__index__categorias:hover {
+  transform: scale(1.1);
+}
+main section .main__index__paginas .main__index__categorias .main__index__categorias__hover {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+main section .main__index__paginas .main__index__categorias .main__index__categorias__hover .main__index__categorias__imagenes {
+  height: 200px;
+  width: 200px;
+  border: solid 2px black;
+}
+main section .main__index__paginas .main__index__categorias .main__index__categorias__hover .titulocategoria {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(199, 129, 84, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+}
+main section .main__index__paginas .main__index__categorias:hover .titulocategoria {
+  width: 100%;
 }
 
 /*Página de Anillos, Aros, Cadenas, Productos, Reloj (Main)*/
-.titulos__paginas{
-    font-style: italic;
-    font-size: 40px;
-    margin: 0px 90px 0px 90px;
-    text-align: left;
-    font-weight: bold;
-    
-}
 .main__productosycategorias {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 }
-.seccion__aside {
-    width: 20%;
+.main__productosycategorias .seccion__aside {
+  width: 20%;
 }
-.seccion__articulos {
-    width: 80%;
+.main__productosycategorias .seccion__aside .div__contenedor {
+  display: flex;
 }
-.filtros{
-background-color: #d9b2a091;
-padding: 20px 15px 20px 15px;
-width: 150px;
+.main__productosycategorias .seccion__aside .div__contenedor .filtros {
+  background-color: rgba(217, 178, 160, 0.568627451);
+  padding: 20px 15px 20px 15px;
+  width: 150px;
 }
-main section div aside h3{
-    font-weight: bold;
+.main__productosycategorias .seccion__aside .div__contenedor .filtros h3 {
+  font-weight: bold;
 }
-.listafiltros{ 
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    text-align: start;
+.main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltros {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  text-align: start;
 }
-.div__contenedor {
-    display: flex;
+.main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltrosCadenas {
+  text-align: start;
+  list-style: none;
+  width: 200px;
 }
-.articulo {
-    width: 200px;
-    height: 270px;
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    border: solid 2px black;
-    text-align: center;
+.main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltroreloj {
+  text-decoration: none;
+  list-style: none;
+  text-align: start;
+  align-items: content;
+  width: 200px;
 }
-h2 {
-    padding: 25px;
+.main__productosycategorias .seccion__aside .filtros {
+  background-color: rgba(217, 178, 160, 0.568627451);
+  padding: 20px 15px 20px 15px;
+  width: 180px;
 }
-
-/*Pagina Contacto*/
-.maincontacto {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+.main__productosycategorias .seccion__aside .filtros .productos__aside__h3 {
+  font-weight: bold;
 }
-.datoscontacto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-right: 2px solid black;
-    width: 600px;
-    align-items:  start;
-    padding-left: 100px;
+.main__productosycategorias .seccion__aside .filtros .main__productos__listacategoria {
+  list-style: none;
 }
-main section div div h3{
-        font-size: 30px;
+.main__productosycategorias .seccion__aside .filtros .main__productos__listacategoria .listafiltros {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  text-align: start;
 }
-.div-contacto {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.main__productosycategorias .seccion__articulos {
+  width: 80%;
 }
-main section div div p a{
-    color: black;
-}
-.datos-contacto {
-    padding: 15px;
-}
-form ul li {
-    list-style: none;
-    padding-top: 20px;
-}
-main section div div h4{
-    text-align: start;
-    text-decoration: underline;
-}
-main section div div p{
-    text-align: start;
-}
-.formulario {
-    text-align: center;
-    padding: 50px;
-    }
-main section div div form ul li input{
-    width: 100%;
-    height: 40px;
-}
-main section div div form ul li button{
-    width: 20%;
-    height: 40px;
-}
-
-/*Pagina Carrito*/
-.seccioncarrito{
-    margin: 100px; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.carrito-arriba {
-    border-bottom: solid 1px black;
-    padding-bottom: 100px;
-}
-.textocarritoycorazon{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    width: 300px;
-    margin: 0px 50px 10px 50px;
-    text-align: center;
-}
-.botoncompras{
-    width: 150px;
-}
-.textoboton{
-    text-decoration: none;
-    color: black;
-    font-size:xx-large;
-}
-
-
-/*Categoria Cadenas */
-.listafiltrosCadenas{
-text-align: start;
-list-style: none;
-width: 200px;
-} 
-
-
-/* Categoria Reloj */
-.filtroreloj{
-    background-color: #d9b2a091;
-    padding: 5px 5px 5px 5px;
-    width: 150px;
-}
-.listafiltroreloj{
-    text-decoration: none;
-    list-style: none;
-    text-align: start;
-    align-items: content;
-    width: 200px;
-
+.main__productosycategorias .seccion__articulos div .articulo {
+  width: 200px;
+  height: 270px;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 2px black;
+  text-align: center;
 }
 
 /* Diseño responsive-vista mobile */
-
-@media (max-width:576px) {
-/* Encabezado */
-    header{
-        padding: 10px;
-    }
-    .logo{
-        width: 150px;
-        margin-top: 40px;
-    } 
-    body header .navbar div form .buscador{
-        display: none;
-    }
-    .navbar-toggler{
-        margin: 0px 50px 0px 50px ;
-    }
-    .header__div__carrito{
-        margin-left: 370px;
-    }
-    
-/* Portada sarava */
-    section img{
-        width:100%;
-        height: 270px;
-    }
-    .subtitulo1{
-        font-size: 35px;
-    }
-/* Footer */
-    footer section div {
-        margin: 0px;
-    }
-    footer section div ul li {
-        font-size: 15px; 
-    }
-    footer section div ul li img {
-        width: 15px;
-        height: 18px;
-    }
-    .footer__lista__uno{
-        width: 250px;
-    }
-    .footer__lista__dos{
-        margin: 0px;
-        width: 150px;
-    }
-    footer section div div h5 {
-        font-size: 25px;
-    }
-    .pagos{
-        justify-content: space-evenly;
-        }
-    .tarjeta{
-        width: 30px;
-        height: 25px;
-    }
-/* Main Pagina Index */
-    main section div article img {
-        width: 60px;
-        height: 80px; ;
-    }
-    .articulo{
-        width: 300px;
-        height: 250px;
-    }
-    .main__index__paginas{
-        padding-right: 20px;
-    }
-    .main__index__categorias{
+@media (max-width: 576px) {
+  /* Encabezado */
+  header {
+    padding: 10px;
+  }
+  header div a .logo {
+    width: 150px;
+    margin-top: 40px;
+  }
+  header div form .buscador {
+    display: none;
+  }
+  header div .navbar-toggler {
+    margin: 0px 50px 0px 50px;
+  }
+  header div .header__div__carrito {
+    margin-left: 370px;
+  }
+  /* Portada sarava */
+  section img {
+    width: 100%;
+    height: 270px;
+  }
+  .subtitulo1 {
+    font-size: 35px;
+  }
+  /* Footer */
+  footer section div {
+    margin: 0px;
+  }
+  footer section div ul li {
+    font-size: 15px;
+  }
+  footer section div ul li img {
+    width: 15px;
+    height: 18px;
+  }
+  footer section div .footer__lista__uno {
+    width: 250px;
+  }
+  footer section div .footer__lista__dos {
+    margin: 0px;
+    width: 150px;
+  }
+  footer section div div h5 {
+    font-size: 25px;
+  }
+  footer section div div .pagos {
+    justify-content: space-evenly;
+  }
+  footer section div div .pagos li .tarjeta {
+    width: 30px;
+    height: 25px;
+  }
+  /* Main Pagina Index */
+  main section div .articulo {
+    width: 300px;
+    height: 250px;
+  }
+  main section div .articulo img {
+    width: 60px;
+    height: 80px;
+  }
+  main section .main__index__paginas {
+    padding-right: 20px;
+  }
+  main section .main__index__paginas .main__index__categorias {
     width: 200px;
     padding: 20px;
-    }
-    .main__index__categorias__hover{
-        width: 200px;
-        height: 200px;
-    }
-    .main__index__categorias__imagenes{
-        height: 200px;
-        width: 200px; 
-    }
-/* Main Pagina Productos */
-    .productos_aside__h3{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .filtros__productos__cel{
-        background-color: rgba(217, 178, 160, 0.76);
-        width: 300px;
-        text-align: center;
-        margin-bottom: 50px;
-        margin-left: 90px;
-    }    
-    .listafiltros{ 
-        padding: 0px 10px 0px 10px;
-        color: black;
-        text-align: center;
-        }
-    .main__productos__listacategoria__cel{
-        display: flex;
-        list-style: none;
-        margin:0px 10px;
-    }
-    .filtros__productos{
-        display: none;
-    }
-    .main__productos__articulos{
+  }
+  main section .main__index__paginas .main__index__categorias .main__index__categorias__hover {
+    width: 200px;
+    height: 200px;
+  }
+  main section .main__index__paginas .main__index__categorias .main__index__categorias__hover a .main__index__categorias__imagenes {
+    height: 200px;
+    width: 200px;
+  }
+  /* Main Pagina Productos */
+  main section .filtros__productos__cel {
+    background-color: rgba(217, 178, 160, 0.76);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 90px;
+  }
+  main section .filtros__productos__cel .productos_aside__h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  main section .filtros__productos__cel .main__productos__listacategoria__cel {
+    display: flex;
+    list-style: none;
+    margin: 0px 10px;
+  }
+  main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltros {
+    padding: 0px 10px 0px 10px;
+    color: black;
+    text-align: center;
+  }
+  main section .filtros__productos {
+    display: none;
+  }
+  main .main__productos__articulos {
     margin-top: 100px;
     justify-content: end;
-    }
-/*Main Pagina Local */
-    .main__local__img{
-        width: 40px;
-        height: auto;
-    }
-    .main__local__h3__ubicacionyhorario{
-        font-size: 15px;
-    }
-    .mapa{
-        width: 300px;
-        height: auto;
-        padding-left: 100px;
-    }
-    .main__local__p__ubicacionyhorario{
-        font-size: 12px;
-    }
-/* Paginas Contacto */
-    .maincontacto section div div div img{
-        width: 40px;
-        height: 30px;
-    }
-    .datoscontacto {
-        border-right: none;
-    }
-    .datos-contacto h3{
-        font-size: 18px;
-    }
-    .div-contacto p {
-        font-size: 16px;
-    }
-    .formulario h3{
-        font-size: 18px;
-    }
-    .formulario p {
-        font-size: 16px;
-    }
-/* Paginas Anillos, Aros, Cadenas y Reloj */
-    .titulos__paginas{
-        font-size: 30px;
-        text-align: center;
-    }
-    .seccion__articulos{
-        padding-top: 10px;
-        padding-left: 80px;
-    }
-/* Titulos de las paginas */
-.titulos__paginas{
+  }
+  /*Main Pagina Local */
+  main section div div .main__local__img {
+    width: 40px;
+    height: auto;
+  }
+  main section div div .main__local__h3__ubicacionyhorario {
+    font-size: 15px;
+  }
+  main section div div .main__local__p__ubicacionyhorario {
+    font-size: 12px;
+  }
+  main section div .mapa {
+    width: 300px;
+    height: auto;
+    padding-left: 100px;
+  }
+  /* Paginas Contacto */
+  .maincontacto section div .datoscontacto {
+    border-right: none;
+  }
+  .maincontacto section div .datoscontacto div img {
+    width: 40px;
+    height: 30px;
+  }
+  .maincontacto section div .datoscontacto div .datos-contacto h3 {
+    font-size: 18px;
+  }
+  .maincontacto section div .datoscontacto div .datos-contacto p {
+    font-size: 16px;
+  }
+  .maincontacto section div .formulario h3 {
+    font-size: 18px;
+  }
+  .maincontacto section div .formulario p {
+    font-size: 16px;
+  }
+  /* Paginas Anillos, Aros, Cadenas y Reloj */
+  .titulos__paginas {
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion__articulos {
+    padding-top: 10px;
+    padding-left: 80px;
+  }
+  /* Titulos de las paginas */
+  .titulos__paginas {
     text-align: start;
     font-style: italic;
     font-size: 35px;
     font-weight: bold;
+  }
 }
-} 
-@media (min-width:577px) {
-/*Pagina Productos  */
-    .filtros__productos__cel{
-        display: none;
-    }
-/* Pagina Anillos */
-    .aside-cel {
-        display: none;
-    }
+@media (min-width: 577px) {
+  /*Pagina Productos  */
+  .filtros__productos__cel {
+    display: none;
+  }
+  /* Pagina Anillos */
+  .aside-cel {
+    display: none;
+  }
 }
+/*Variables*/
+
+/*# sourceMappingURL=style.css.map */

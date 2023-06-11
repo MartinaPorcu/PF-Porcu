@@ -1,0 +1,61 @@
+
+@import 'mapget';
+
+/* Footer*/
+footer {
+    background-color: $color-fondo;
+    display: flex; 
+    flex-wrap: wrap;
+    padding-top: 15px ;
+    section{
+        div{
+            justify-content: space-between;
+            ul{
+                text-decoration: none;
+                list-style: none;
+                padding-right: 200px;
+                li {
+                    img{
+                        margin-right: 20px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            .footer__lista__dos{
+                margin-left: 100px;
+                margin-right: 100px;
+                text-align: start;
+                width: 160px;
+                padding: 0px;
+                letter-spacing: 3px;
+                li{
+                    &:hover{
+                        transform:map-get($hover-blanco, escalado);
+                        a{
+                            color: map-get($hover-blanco, blanco);
+                        }
+                    }
+                }
+            }
+            .footer__lista__tres {
+                h5{
+                    text-align: center;
+                }
+                .pagos{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    li{
+                        .tarjeta{
+                            width: 50px;
+                            align-content: end;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

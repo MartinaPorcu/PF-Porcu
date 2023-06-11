@@ -1,0 +1,40 @@
+/*Pagina Carrito*/
+main{
+    section{
+        .carrito-arriba {
+        border-bottom: solid 1px black;
+        padding-bottom: 100px;
+        }
+        .seccioncarrito{
+            margin: 100px; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .textocarritoycorazon{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 30px;
+                width: 300px;
+                margin: 0px 50px 10px 50px;
+                text-align: center;
+            }
+            div{
+                .botoncompras{
+                    width: 150px;
+                    .textoboton{
+                        text-decoration: none;
+                        color: black;
+                        font-size:xx-large;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

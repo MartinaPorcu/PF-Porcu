@@ -1,0 +1,73 @@
+/*Main de index*/
+main{
+    section{
+        div{
+            .subtitulo1{
+            margin: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            align-content: center;
+            
+        }
+        }
+        .main__index__masvendido{
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap:wrap;
+            article{
+                justify-content: space-evenly;
+            }
+            .articulo {
+                width: 200px;
+                height: 270px;
+                margin: 20px;
+                padding: 10px;
+                background-color: white;
+                border-radius: 5px;
+                border: solid 2px black;
+                text-align: center;
+            }
+        }
+        .main__index__paginas{
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+            .main__index__categorias {
+                text-align: center;
+                font-style: $Estilo-fuente;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                .main__index__categorias__hover {
+                    width: 200px;
+                    height: 200px;
+                    position: relative;
+                    .main__index__categorias__imagenes {
+                        height: 200px;
+                        width: 200px;
+                        border: solid 2px black;
+                    }
+                    .titulocategoria {
+                        width: 0%;
+                        height: 100%;
+                        background-color: rgba(199, 129, 84, 0.7);
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: end;
+                        overflow: hidden;
+                    }
+                }
+                &:hover .titulocategoria {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+

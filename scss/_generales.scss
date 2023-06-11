@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'JosefinSans';
+    color: black;
+}
+body {
+    background-color: #dcccc3;
+}
+
+
+/*titulos de cada pagina*/
+.titulos__paginas{
+    font-style: $Estilo-fuente;
+    font-size: 40px;
+    margin: 0px 90px 0px 90px;
+    text-align: left;
+    font-weight: bold;
+    
+}
+

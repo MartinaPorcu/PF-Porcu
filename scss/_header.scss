@@ -1,0 +1,51 @@
+/*Encabezado*/
+
+header {
+    background-color: $color-fondo;    
+    justify-content: space-between;
+    align-items: end;
+    nav{
+        div{
+            a{
+                .logo {
+                border-radius: 100px;
+                width:170px;
+                margin-right: 50px;
+                }
+            }
+            div{
+                .navbar-nav{
+                    padding-left: 70px;
+                    .nav-item {
+                        padding: 0 20px 0 20px;
+                        font-size: 15px;
+                        text-align: end;
+                        &:hover{
+                            transform:map-get($hover-blanco , escalado);
+                            .nav-link {
+                                color: map-get($hover-blanco , blanco)
+                            }
+                        }
+                        .nav-link{
+                            text-decoration: none;
+                            color: black;
+                            letter-spacing: 3px;
+                        }
+                        
+                    }
+                }
+            }
+            div{
+                .header__ul__carrito{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    .header__li__carrito{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
