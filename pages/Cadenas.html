@@ -18,7 +18,7 @@
                 <a class="navbar-brand" href="../index.html"><img class="logo animate__animated animate__fadeIn" src="../img/Logo.png" alt="Logosarava"></a>
                 <form class="d-flex " role="search">
                     <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="buscador botones__articulos" type="submit">Buscar</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,14 +40,14 @@
                             <a class="nav-link" href="./Contacto.html">Contacto</a>
                         </li>
                     </ul>
-                </div>
-                <div class="header__div__carrito">
-                    <ul class="header__ul__carrito">
-                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"
-                                    alt="Carrito" width="20px"></a></li>
-                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
-                                    alt="Favoritos" width="20px"></a></li>
-                    </ul>
+                    <div class="header__div__carrito">
+                        <ul class="header__ul__carrito">
+                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"
+                                        alt="Carrito" width="20px"></a></li>
+                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
+                                        alt="Favoritos" width="20px"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -59,7 +59,27 @@
     <main class="main__productosycategorias">
         <section class="container seccion__aside">
             <div class="row div__contenedor">
-                <aside class="col-3 filtros">
+                <aside class="filtros__categoria__cel">
+                    <h3 class="categoria__aside__h3">Material</h3>
+                    <ul class="aside__lista__cel">
+                        <li class="listafiltros">
+                            Acero
+                        </li>
+                        <li class="listafiltros">
+                            plata
+                        </li>
+                    </ul>
+                    <h3 class="categoria__aside__h3">Tema</h3>
+                    <ul class="aside__lista__cel">
+                        <li class="listafiltros">
+                            Con dije
+                        </li>
+                        <li class="listafiltros">
+                            Sin dije
+                        </li>
+                    </ul>
+                </aside>
+                <aside class=" filtros__categorias col-3 filtros">
                     <h3>Material</h3>
                     <ul class="listafiltrosCadenas">
                         <li>
@@ -83,62 +103,125 @@
         <section class="container seccion__articulos">
             <div class="row">
             <article class=" articulo col-xs-2 col-lg-2">
-                <img src="../img/Cadena con Corazon.jpg" alt="Cadenacorazon" width="100px" height="100px">
-                <p>Cadena de plata con dije de corazon </p>
-                <h5>$ 9.000 </h5>
-                <button class="botones__articulos">
-                    Agregar al Carrito
-                </button>
+                <div>
+                    <img src="../img/Cadena con Corazon.jpg" alt="Cadenacorazon" width="100px" height="100px">
+                </div>
+                <div>
+                    <p>Cadena de plata con dije de corazon </p>
+                    <h5>$ 9.000 </h5>
+                </div>
+                <div>
+                    <button class="botones__articulos">
+                        Agregar al Carrito
+                    </button>
+                    <button class="botones__articulos botonfav">
+                        <img src="../img/icono corazon.png" alt="iconocorazon">
+                    </button>
+                </div>
             </article>
             <article class=" articulo col-xs-2 col-lg-2">
-                <img src="../img/cadena clasica de acero.jpg" alt="Cadenasola" width="100px" height="100px">
-                <p>Cadena de acero clásica </p>
-                <h5>$ 5.000 </h5>
-                <button class="botones__articulos">
-                    Agregar al Carrito
-                </button>
+                <div>
+                    <img src="../img/cadena clasica de acero.jpg" alt="Cadenasola" width="100px" height="100px">
+                </div>
+                <div>
+                    <p>Cadena de acero clásica </p>
+                    <h5>$ 5.000 </h5>
+                </div>
+                <div>
+                    <button class="botones__articulos">
+                        Agregar al Carrito
+                    </button>
+                    <button class="botones__articulos botonfav">
+                        <img src="../img/icono corazon.png" alt="iconocorazon">
+                    </button>
+                </div>
             </article>
             <article class="articulo col-xs-2 col-lg-2">
-                <img src="../img/cadena de plata fina.jpg" alt="Cadenaclasica" width="100px" height="100px">
-                <p>Cadena fina de plata clásica </p>
-                <h5>$ 8.000 </h5>
-                <button class="botones__articulos">
-                    Agregar al Carrito
-                </button>
+                <div>
+                    <img src="../img/cadena de plata fina.jpg" alt="Cadenaclasica" width="100px" height="100px">
+                </div>
+                <div>
+                    <p>Cadena fina de plata clásica </p>
+                    <h5>$ 8.000 </h5>
+                </div>
+                <div>
+                    <button class="botones__articulos">
+                        Agregar al Carrito
+                    </button>
+                    <button class="botones__articulos botonfav">
+                        <img src="../img/icono corazon.png" alt="iconocorazon">
+                    </button>
+                </div>
             </article>
             <article class="articulo col-xs-2 col-lg-2">
-                <img src="../img/cadena con dije de brillo.jpg" alt="Cadenabrillo" width="100px" height="100px">
-                <p>Cadena de plata con dije de estrella de brillo</p>
-                <h5>$ 12.000 </h5>
-                <button class="botones__articulos">
-                    Agregar al Carrito
-                </button>
+                <div>
+                    <img src="../img/cadena con dije de brillo.jpg" alt="Cadenabrillo" width="100px" height="100px">
+                </div>
+                <div>
+                    <p>Cadena de plata con dije de estrella de brillo</p>
+                    <h5>$ 12.000 </h5>
+                </div>
+                <div>
+                    <button class="botones__articulos">
+                        Agregar al Carrito
+                    </button>
+                    <button class="botones__articulos botonfav">
+                        <img src="../img/icono corazon.png" alt="iconocorazon">
+                    </button>
+                </div>
             </article>
             </div>
             <div class="row">
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/cadena con nombre.jpg" alt="CadenaNombre" width="100px" height="100px">
-                    <p>Cadena de plata con dije de Nombre </p>
-                    <h5>$ 9.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/cadena con nombre.jpg" alt="CadenaNombre" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Cadena de plata con dije de Nombre </p>
+                        <h5>$ 9.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/collar de cruz.jpg" alt="Cadenacruz" width="100px" height="100px">
-                    <p>Cadena de plata con cruz</p>
-                    <h5>$ 7.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/collar de cruz.jpg" alt="Cadenacruz" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Cadena de plata con cruz</p>
+                        <h5>$ 7.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/cadena acero con dije corazon.jpg" alt="Cadenaacero" width="100px" height="100px">
-                    <p>Cadena de acero con dije de corazon </p>
-                    <h5>$ 3.500 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/cadena acero con dije corazon.jpg" alt="Cadenaacero" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Cadena de acero con dije de corazon </p>
+                        <h5>$ 3.500 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
             </div>
         </section>

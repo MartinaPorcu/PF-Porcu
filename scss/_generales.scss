@@ -23,9 +23,17 @@ body {
 
 /*botones de todos los articulos*/
 .botones__articulos{
-    border:1px solid black;
+    border-color: rgb(205, 138, 96);
+    color: rgb(205, 138, 96);
+    font-weight: bold;
     border-radius: 4px;
-    padding: 5px;
-    background-color:rgba($color: rgba(183, 176, 176, 0.747), $alpha: 7.0);
+    padding: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+        color: white;
+        background-color:rgb(205, 138, 96);
+        border-color:rgb(205, 138, 96);
+    }
 }
 

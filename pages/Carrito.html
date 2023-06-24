@@ -18,7 +18,7 @@
                 <a class="navbar-brand" href="../index.html"><img class="logo animate__animated animate__fadeIn" src="../img/Logo.png" alt="Logosarava"></a>
                 <form class="d-flex " role="search">
                     <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="buscador botones__articulos" type="submit">Buscar</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,14 +40,12 @@
                             <a class="nav-link" href="./Contacto.html">Contacto</a>
                         </li>
                     </ul>
-                </div>
-                <div class="header__div__carrito">
-                    <ul class="header__ul__carrito">
-                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"
-                                    alt="Carrito" width="20px"></a></li>
-                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
-                                    alt="Favoritos" width="20px"></a></li>
-                    </ul>
+                    <div class="header__div__carrito">
+                        <ul class="header__ul__carrito">
+                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png"alt="Carrito" width="20px"></a></li>
+                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"alt="Favoritos" width="20px"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -58,20 +56,20 @@
     <main>
         <section class="container-fluid">
             <div class=" row seccioncarrito carrito-arriba">
-                <img class="col-xs-2 col-lg-2" src="../img/icono carrito.png" alt="IconoCarrito" width="10px" height="150px">
-                <h3 class=" col-xs-6 col-lg-2 textocarritoycorazon">Tu Carrito está vacío</h3>
-                <div class="col-xs-4 col-lg-2">
-                    <button class="botoncompras">
-                        <a class="textoboton" href="./Productos.html">Comprar</a>
+                <img class="iconos_carrito col-xs-12 col-lg-2" src="../img/icono carrito.png" alt="IconoCarrito">
+                <h3 class=" col-xs-12 col-lg-2 textocarritoycorazon">Tu Carrito está vacío</h3>
+                <div class="col-xs-12 col-lg-2">
+                    <button class=" botones__articulos">
+                        <a class="botones__articulos textoboton" href="./Productos.html">Comprar</a>
                     </button>
                 </div>
             </div>
             <div class="row seccioncarrito">
-                <img class="col-xs-4 col-lg-2" src="../img/icono corazon.png" alt="IconoCorazon" width="5px" height="150px">
-                <h3 class="col-xs-8 col-lg-2 textocarritoycorazon">Aún no tienes favoritos</h3>
+                <img class="iconos_carrito col-xs-6 col-lg-2" src="../img/icono corazon.png" alt="IconoCorazon">
+                <h3 class="col-xs-3 col-lg-2 textocarritoycorazon">Aún no tienes favoritos</h3>
                 <div class="col-xs-12 col-lg-2">
-                    <button class="botoncompras">
-                        <a class="textoboton" href="./Productos.html">Ver Productos</a>
+                    <button class=" botones__articulos">
+                        <a class="botones__articulos textoboton" href="./Productos.html">Ver Productos</a>
                     </button>
                 </div>
             </div>

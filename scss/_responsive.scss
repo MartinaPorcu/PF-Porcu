@@ -1,260 +1,368 @@
 /* Diseño responsive-vista mobile */
 
 @media (max-width:576px) {
-    /* Encabezado */
-        header{
-            padding: 10px;
-            div{
-                a{
-                    .logo{
-                        @include sizes(150px,40px 0px 0px 0px)
-                    } 
+/* Encabezado */
+    header{
+        padding: 10px;
+        div{
+            a{
+                .logo{
+                    @include sizes(100px,40px 0px 0px 0px)
+                } 
+            }
+            form{
+                .buscador{
+                    display: none;
                 }
-                form{
-                    .buscador{
-                        display: none;
+            }
+        div{
+            ul{
+                li{
+                    .nav-link{
+                        padding: 20px 0px;
                     }
-                }
-                .navbar-toggler{
-                    margin: 0px 50px 0px 50px ;
                 }
                 .header__div__carrito{
-                    margin-left: 370px;
-                }
-            }
-        }
-        
-    /* Portada sarava */
-        section img{
-            width:100%;
-            height: 270px;
-        }
-        .subtitulo1{
-            font-size: 35px;
-        }
-    /* Footer */
-        footer{
-            section{
-                div {
-                    margin: 0px;
-                    ul{
-                        li{
-                            font-size: 15px;
-                            img {
-                                width: 15px;
-                                height: 18px;
-                            }
-                        }
-                    }
-                    .footer__lista__uno{
-                        width: 250px;
-                    }
-                    .footer__lista__dos{
-                        @include sizes(150px,0px)
-                    }
-                    div{
-                        h5 {
-                            font-size: 25px;
-                        }
-                        .pagos{
-                            justify-content: space-evenly;
-                            li{
-                                .tarjeta{
-                                    width: 30px;
-                                    height: 25px;
-                                }
-                            }
-                            }
+                    .header__ul__carrito{
+                        justify-content: end;
+                        align-content: end;
                     }
                 }
             }
-        }
-
-    /* Main Pagina Index */
-        main {
-            section{
-                div{
-                    .articulo{
-                        width: 300px;
-                        height: 250px;
-                        img {
-                            width: 60px;
-                            height: 80px; ;
-                        }
-                    }
-                }
-                .main__index__paginas{
-                    padding-right: 20px;
-                    .main__index__categorias{
-                        width: 200px;
-                        padding: 20px;
-                        .main__index__categorias__hover{
-                            width: 200px;
-                            height: 200px;
-                            a{
-                                .main__index__categorias__imagenes{
-                                    height: 200px;
-                                    width: 200px; 
-                                }
-                            }
-                            }                        
-                        }
-                }
-            }
-        }
-
-
-
-    /* Main Pagina Productos */
-main{
-    section{
-        .filtros__productos__cel{
-            @include sizes(300px, 0px 0px 50px 90px);
-            background-color: rgba(217, 178, 160, 0.76);
-            text-align: center;            
-            .productos_aside__h3{
-                font-size: 20px;
-                font-weight: bold;
-            }
-            .main__productos__listacategoria__cel{
-                display: flex;
-                list-style: none;
-                margin:0px 10px;
-                li{
-                    .listafiltros{ 
-                        padding: 0px 10px 0px 10px;
-                        color: black;
-                        text-align: center;
-                        text-decoration: none;
-                        }
-                }
-            }
-        }
-        .filtros__productos{
-            display: none;
         }
     }
-    .main__productos__articulos{
-        margin-top: 100px;
-        justify-content: end;
+}
+    
+/* Portada sarava */
+    section img{
+        width:100%;
+        height: 270px;
+    }
+    .subtitulo1{
+        font-size: 35px;
+    }
+/* Footer */
+    footer{
+        section{
+            div {
+                margin: 0px;
+                ul{
+                    li{
+                        font-size: 15px;
+                        img {
+                            width: 15px;
+                            height: 18px;
+                        }
+                    }
+                }
+                .footer__lista__uno{
+                    width: 250px;
+                }
+                .footer__lista__dos{
+                    @include sizes(150px,0px)
+                }
+                div{
+                    h5 {
+                        font-size: 25px;
+                    }
+                    .pagos{
+                        justify-content: space-evenly;
+                        li{
+                            .tarjeta{
+                                width: 30px;
+                                height: 25px;
+                            }
+                        }
+                        }
+                }
+            }
         }
+    }
+/* Titulos de las paginas */
+.titulos__paginas{
+    text-align: center;
+    font-style: $Estilo-fuente;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+}
+/* Main Pagina Index */
+    main {
+        section{
+            .carousel{
+                display:none;
+            }
+        }
+        section{
+            .main__index__masvendido{
+                margin: 0px;
+                justify-content: center;
+                .articulo{
+                    width: 300px;
+                    height: 350px;
+                    font-size: 25px;
+                    img {
+                        width: 100px;
+                        height: 100px ;
+                    }
+                    div{
+                        .botonfav{
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .index__paginas{
+                justify-content:start;
+                align-content: start;
+                padding-top: 0px;
+                .index__categorias{
+                    width: 200px;
+                    margin: 50px;
+                    padding-bottom: 60px;
+                    .index__categoriashover{
+                        width: 200px;
+                        height: 200px;
+                        a{
+                            .categorias__imagenes{
+                                height: 300px;
+                                width: 300px; 
+                                margin: 50px;
+                            }
+                            .titulocategoria {
+                                width:300px ;
+                                height: 300px;
+                                margin: 50px;
+                                color: black;
+                                background-color: rgba(199, 128, 84, 0.26)
+                            }
+                        }
+                    }                        
+                }
+            }
+        }
+    }
+
+
+
+/* Main Pagina Productos */
+.main__productosycategorias{
+.seccion__asideproductos{
+    width: auto;
+    .filtros__productos__cel{
+        width: 300px;
+        background-color: rgba(217, 178, 160, 0.76);
+        text-align: center;            
+        .productos_aside__h3{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .aside__lista__cel{
+            display: flex;
+            list-style: none;
+            margin:0px 10px;
+            li{
+                .listafiltros{ 
+                    padding: 0px 10px 0px 10px;
+                    color: black;
+                    text-align: center;
+                    text-decoration: none;
+                    }
+            }
+        }
+    }
+    .filtros__productos{
+        display: none;
+    }
+}
+.main__productos__articulos{
+    width: auto;
+    margin-top: 50px;
+    padding-left: 0px;
+    div{
+        justify-content: center;
+        .articulo{
+            width: 300px;
+            height: 350px;
+            font-size: 25px;
+            div{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            div{
+                .botonfav{
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+    }
 }
 
 
-    /*Main Pagina Local */
-    main{
-        section{
+/*Main Pagina Local */
+main{
+    section{
+        div{
             div{
+                .main__local__img{
+                    width: 40px;
+                    height: auto;
+                }
+                .main__local__h3__ubicacionyhorario{
+                    font-size: 25px;
+                }
+                .main__local__p__ubicacionyhorario{
+                    font-size: 20px;
+                }
+            }
+            .mapa{
+                width: 400px;
+                height: auto;
+                padding-left: 100px;
+            }        
+        }
+    }
+}
+
+/* Paginas Contacto */
+.maincontacto{
+    section{
+        div{
+            .contacto {
+                border-right: none;
                 div{
-                    .main__local__img{
+                    img{
                         width: 40px;
+                        height: 30px;
+                    }
+                    .datos{
+                        h3{
+                            font-size: 25px;
+                        }
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .formulario{
+                margin-left: 50px;
+                width: 450px;
+                background-color: rgba(207, 150, 115, 0.228);
+                h3{
+                    font-size: 25px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 20px;
+                }
+            } 
+        }
+    }
+}
+
+/* Paginas Anillos, Aros, Cadenas y Reloj */
+.main__productosycategorias{
+    .seccion__aside{
+        width: auto;
+        .filtros__categoria__cel{
+            width: 300px;
+            background-color: rgba(217, 178, 160, 0.76);
+            text-align: center;            
+            .categoria__aside__h3{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .aside__lista__cel{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                .listafiltros{ 
+                    padding: 10px;
+                    color: black;
+                    text-align: center;
+                    text-decoration: none;
+                    
+                    }
+            }
+        }
+        .filtros__categorias{
+            display: none;
+        }
+    }
+    .seccion__articulos{
+        width: auto;
+        margin-top: 50px;
+        padding-left: 0px;
+        div{
+            justify-content: center;
+            .articulo{
+                width: 300px;
+                height: 350px;
+                font-size: 25px;
+                div{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                div{
+                    .botonfav{
+                        width: auto;
                         height: auto;
                     }
-                    .main__local__h3__ubicacionyhorario{
+                }
+            }
+        }
+    }
+}
+/*Pagina carrito*/
+main{
+    section{
+        .seccioncarrito{
+            margin: 0px;
+            padding: 30px;
+            justify-content: center;
+            img{
+                width: 150px;
+                height: 100px;
+                margin-bottom: 30px ;
+            }
+            .textocarritoycorazon{
+                font-size: 25px;
+                margin: 30px;
+                padding: 20px;
+            }
+            div{
+                text-align: center;
+                padding-top: 30px;
+                .botoncompras{
+                    width: 90px;
+                    margin: 10px;
+                    .textoboton{
                         font-size: 15px;
                     }
-                    .main__local__p__ubicacionyhorario{
-                        font-size: 12px;
-                    }
-                }
-                .mapa{
-                    width: 300px;
-                    height: auto;
-                    padding-left: 100px;
-                }        
-            }
-        }
-    }
-
-
-
-    /* Paginas Contacto */
-    .maincontacto{
-        section{
-            div{
-                .datoscontacto {
-                    border-right: none;
-                    div{
-                        img{
-                            width: 40px;
-                            height: 30px;
-                        }
-                        .datos-contacto{
-                            h3{
-                                font-size: 18px;
-                            }
-                            p {
-                                font-size: 16px;
-                            }
-                        }
-                    }
-                }
-                .formulario{
-                    h3{
-                        font-size: 18px;
-                    }
-                    p {
-                        font-size: 16px;
-                    }
-                } 
-            }
-        }
-    }
-
-    /* Paginas Anillos, Aros, Cadenas y Reloj */
-        .titulos__paginas{
-            font-size: 30px;
-            text-align: center;
-        }
-        .seccion__articulos{
-            padding-top: 10px;
-            padding-left: 80px;
-        }
-    /* Titulos de las paginas */
-    .titulos__paginas{
-        text-align: start;
-        font-style: $Estilo-fuente;
-        font-size: 35px;
-        font-weight: bold;
-    }
-    /*Pagina Carrito*/
-    main{
-        section{
-            .seccioncarrito{
-                margin: 0px;
-                padding: 10px;;
-                justify-content: center;
-                img{
-                    width: 70px;
-                    height: 50px;
-                    margin-bottom: 30px ;
-                }
-                .textocarritoycorazon{
-                    font-size: 25px;
-                    margin-bottom: 30px;
-                }
-                div{
-                    text-align: center;
-                    .botoncompras{
-                        width: 90px;
-                        margin: 10px;
-                        .textoboton{
-                            font-size: 15px;
-                        }
-                    }
                 }
             }
         }
     }
-    } 
-    @media (min-width:577px) {
+}
+}
+
+@media (min-width:577px) {
     /*Pagina Productos  */
         .filtros__productos__cel{
             display: none;
         }
-    /* Pagina Anillos */
         .aside-cel {
             display: none;
         }
+        .filtros__categoria__cel{
+            display: none;
+        }
     }
-    

@@ -1,33 +1,4 @@
 @charset "UTF-8";
-/*Pagina Carrito*/
-main section .carrito-arriba {
-  border-bottom: solid 1px black;
-  padding-bottom: 100px;
-}
-main section .seccioncarrito {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 100px;
-  justify-content: space-between;
-  align-items: center;
-}
-main section .seccioncarrito .textocarritoycorazon {
-  font-size: 40px;
-  font-weight: bold;
-  width: 300px;
-  margin: 0px 50px 10px 50px;
-  font-style: normal;
-  text-align: center;
-}
-main section .seccioncarrito div .botoncompras {
-  width: 150px;
-}
-main section .seccioncarrito div .botoncompras .textoboton {
-  text-decoration: none;
-  color: black;
-  font-size: xx-large;
-}
-
 /*Variables*/
 /*Pagina Contacto*/
 .maincontacto {
@@ -42,7 +13,7 @@ main section .seccioncarrito div .botoncompras .textoboton {
   margin: 0px 90px 0px 90px;
   text-align: left;
 }
-.maincontacto section div .datoscontacto {
+.maincontacto section div .contacto {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -51,34 +22,35 @@ main section .seccioncarrito div .botoncompras .textoboton {
   align-items: start;
   padding-left: 100px;
 }
-.maincontacto section div .datoscontacto .div-contacto {
+.maincontacto section div .contacto .div-contacto {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.maincontacto section div .datoscontacto .div-contacto .datos-contacto {
+.maincontacto section div .contacto .div-contacto .datos {
   padding: 15px;
 }
-.maincontacto section div .datoscontacto .div-contacto .datos-contacto h3 {
+.maincontacto section div .contacto .div-contacto .datos h3 {
   font-size: 30px;
   font-weight: bold;
 }
-.maincontacto section div .datoscontacto .div-contacto {
+.maincontacto section div .contacto .div-contacto {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.maincontacto section div .datoscontacto .div-contacto .datos-contacto {
+.maincontacto section div .contacto .div-contacto .datos {
   padding: 15px;
 }
-.maincontacto section div .datoscontacto .div-contacto .datos-contacto h3 {
+.maincontacto section div .contacto .div-contacto .datos h3 {
   font-size: 30px;
   font-weight: bold;
 }
-.maincontacto section div .datoscontacto .div-contacto .datos-contacto p a {
+.maincontacto section div .contacto .div-contacto .datos p a {
   color: black;
+  text-decoration: none;
 }
 .maincontacto section div .formulario {
   text-align: center;
@@ -90,6 +62,9 @@ main section .seccioncarrito div .botoncompras .textoboton {
 }
 .maincontacto section div .formulario p {
   text-align: start;
+}
+.maincontacto section div .formulario form ul {
+  padding: 0;
 }
 .maincontacto section div .formulario form ul li {
   list-style: none;
@@ -179,10 +154,18 @@ body {
 
 /*botones de todos los articulos*/
 .botones__articulos {
-  border: 1px solid black;
+  border-color: rgb(205, 138, 96);
+  color: rgb(205, 138, 96);
+  font-weight: bold;
   border-radius: 4px;
-  padding: 5px;
-  background-color: #b7b0b0;
+  padding: 3px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.botones__articulos:hover {
+  color: white;
+  background-color: rgb(205, 138, 96);
+  border-color: rgb(205, 138, 96);
 }
 
 /*Encabezado*/
@@ -229,11 +212,12 @@ main section div .titulos__paginas {
   font-size: 40px;
   font-weight: bold;
   font-style: italic;
-  margin: 0px 90px 0px 90px;
+  margin: 0px 115px 0px 115px;
   text-align: left;
 }
 main section div .ubicacion {
   padding-top: 20px;
+  text-align: left;
 }
 main section div .ubicacion h3 {
   font-weight: bold;
@@ -276,10 +260,28 @@ main section div .subtitulo1 {
 main section .main__index__masvendido {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-left: 10px;
 }
 main section .main__index__masvendido article {
-  justify-content: space-evenly;
+  padding-left: 10px;
+}
+main section .main__index__masvendido article div img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+main section .main__index__masvendido article div h4 {
+  font-weight: bold;
+}
+main section .main__index__masvendido article div .botonfav {
+  width: 30px;
+  height: 35px;
+}
+main section .main__index__masvendido article div .botonfav img {
+  margin-top: 5px;
+  width: 100%;
+  height: 15px;
 }
 main section .main__index__masvendido .articulo {
   width: 200px;
@@ -291,30 +293,31 @@ main section .main__index__masvendido .articulo {
   border: solid 2px black;
   text-align: center;
 }
-main section .main__index__paginas {
+main section .index__paginas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-bottom: 100px;
+  padding-top: 20px;
 }
-main section .main__index__paginas .main__index__categorias {
+main section .index__paginas .index__categorias {
   text-align: center;
   font-style: italic;
 }
-main section .main__index__paginas .main__index__categorias:hover {
+main section .index__paginas .index__categorias:hover {
   transform: scale(1, 1.1, 1);
 }
-main section .main__index__paginas .main__index__categorias .main__index__categorias__hover {
+main section .index__paginas .index__categorias .index__categoriashover {
   width: 200px;
   height: 200px;
   position: relative;
 }
-main section .main__index__paginas .main__index__categorias .main__index__categorias__hover .main__index__categorias__imagenes {
+main section .index__paginas .index__categorias .index__categoriashover .categorias__imagenes {
   height: 200px;
   width: 200px;
   border: solid 2px black;
 }
-main section .main__index__paginas .main__index__categorias .main__index__categorias__hover .titulocategoria {
+main section .index__paginas .index__categorias .index__categoriashover .titulocategoria {
   display: flex;
   flex-wrap: wrap;
   width: 0%;
@@ -326,10 +329,29 @@ main section .main__index__paginas .main__index__categorias .main__index__catego
   align-items: end;
   overflow: hidden;
 }
-main section .main__index__paginas .main__index__categorias:hover .titulocategoria {
+main section .index__paginas .index__categorias:hover .titulocategoria {
   width: 100%;
   animation: fadeIn;
   animation-duration: 1.5s;
+}
+main section .carousel {
+  width: 85%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 120px;
+}
+main section .carousel div div img {
+  width: 1060px;
+}
+
+/*Titulos Productos, Anillos, Aros, Cadenas y Reloj*/
+.titulos__paginas {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px 0px 30px 20px;
+  text-align: left;
 }
 
 /*Página de Anillos, Aros, Cadenas, Productos, Reloj (Main)*/
@@ -337,7 +359,7 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  justify-content: start;
+  justify-content: center;
 }
 .main__productosycategorias .seccion__aside {
   width: 20%;
@@ -385,11 +407,23 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
 }
 .main__productosycategorias .seccion__articulos {
   width: 80%;
+  justify-content: start;
+}
+.main__productosycategorias .seccion__articulos div article div h5 {
+  font-weight: bold;
+}
+.main__productosycategorias .seccion__articulos div article div .botonfav {
+  width: 30px;
+  height: 35px;
+}
+.main__productosycategorias .seccion__articulos div article div .botonfav img {
+  width: 100%;
+  height: 15px;
 }
 .main__productosycategorias .seccion__articulos div .articulo {
   width: 200px;
   height: 270px;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
   padding: 10px;
   background-color: white;
   border-radius: 5px;
@@ -404,17 +438,18 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
     padding: 10px;
   }
   header div a .logo {
-    width: 150px;
+    width: 100px;
     margin: 40px 0px 0px 0px;
   }
   header div form .buscador {
     display: none;
   }
-  header div .navbar-toggler {
-    margin: 0px 50px 0px 50px;
+  header div div ul li .nav-link {
+    padding: 20px 0px;
   }
-  header div .header__div__carrito {
-    margin-left: 370px;
+  header div div ul .header__div__carrito .header__ul__carrito {
+    justify-content: end;
+    align-content: end;
   }
   /* Portada sarava */
   section img {
@@ -452,58 +487,108 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
     width: 30px;
     height: 25px;
   }
+  /* Titulos de las paginas */
+  .titulos__paginas {
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+  }
   /* Main Pagina Index */
-  main section div .articulo {
+  main section .carousel {
+    display: none;
+  }
+  main section .main__index__masvendido {
+    margin: 0px;
+    justify-content: center;
+  }
+  main section .main__index__masvendido .articulo {
     width: 300px;
-    height: 250px;
+    height: 350px;
+    font-size: 25px;
   }
-  main section div .articulo img {
-    width: 60px;
-    height: 80px;
+  main section .main__index__masvendido .articulo img {
+    width: 100px;
+    height: 100px;
   }
-  main section .main__index__paginas {
-    padding-right: 20px;
+  main section .main__index__masvendido .articulo div .botonfav {
+    width: auto;
+    height: auto;
   }
-  main section .main__index__paginas .main__index__categorias {
+  main section .index__paginas {
+    justify-content: start;
+    align-content: start;
+    padding-top: 0px;
+  }
+  main section .index__paginas .index__categorias {
     width: 200px;
-    padding: 20px;
+    margin: 50px;
+    padding-bottom: 60px;
   }
-  main section .main__index__paginas .main__index__categorias .main__index__categorias__hover {
+  main section .index__paginas .index__categorias .index__categoriashover {
     width: 200px;
     height: 200px;
   }
-  main section .main__index__paginas .main__index__categorias .main__index__categorias__hover a .main__index__categorias__imagenes {
-    height: 200px;
-    width: 200px;
+  main section .index__paginas .index__categorias .index__categoriashover a .categorias__imagenes {
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+  }
+  main section .index__paginas .index__categorias .index__categoriashover a .titulocategoria {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    color: black;
+    background-color: rgba(199, 128, 84, 0.26);
   }
   /* Main Pagina Productos */
-  main section .filtros__productos__cel {
+  .main__productosycategorias .seccion__asideproductos {
+    width: auto;
+  }
+  .main__productosycategorias .seccion__asideproductos .filtros__productos__cel {
     width: 300px;
-    margin: 0px 0px 50px 90px;
     background-color: rgba(217, 178, 160, 0.76);
     text-align: center;
   }
-  main section .filtros__productos__cel .productos_aside__h3 {
+  .main__productosycategorias .seccion__asideproductos .filtros__productos__cel .productos_aside__h3 {
     font-size: 20px;
     font-weight: bold;
   }
-  main section .filtros__productos__cel .main__productos__listacategoria__cel {
+  .main__productosycategorias .seccion__asideproductos .filtros__productos__cel .aside__lista__cel {
     display: flex;
     list-style: none;
     margin: 0px 10px;
   }
-  main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltros, main section .filtros__productos__cel .main__productos__listacategoria__cel li .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltrosCadenas, .main__productosycategorias .seccion__aside .div__contenedor .filtros main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltrosCadenas, main section .filtros__productos__cel .main__productos__listacategoria__cel li .main__productosycategorias .seccion__aside .div__contenedor .filtros .listafiltroreloj, .main__productosycategorias .seccion__aside .div__contenedor .filtros main section .filtros__productos__cel .main__productos__listacategoria__cel li .listafiltroreloj {
+  .main__productosycategorias .seccion__asideproductos .filtros__productos__cel .aside__lista__cel li .listafiltros, .main__productosycategorias .seccion__asideproductos .filtros__productos__cel .aside__lista__cel li .seccion__aside .div__contenedor .filtros .listafiltrosCadenas, .main__productosycategorias .seccion__aside .div__contenedor .filtros .seccion__asideproductos .filtros__productos__cel .aside__lista__cel li .listafiltrosCadenas, .main__productosycategorias .seccion__asideproductos .filtros__productos__cel .aside__lista__cel li .seccion__aside .div__contenedor .filtros .listafiltroreloj, .main__productosycategorias .seccion__aside .div__contenedor .filtros .seccion__asideproductos .filtros__productos__cel .aside__lista__cel li .listafiltroreloj {
     padding: 0px 10px 0px 10px;
     color: black;
     text-align: center;
     text-decoration: none;
   }
-  main section .filtros__productos {
+  .main__productosycategorias .seccion__asideproductos .filtros__productos {
     display: none;
   }
-  main .main__productos__articulos {
-    margin-top: 100px;
-    justify-content: end;
+  .main__productosycategorias .main__productos__articulos {
+    width: auto;
+    margin-top: 50px;
+    padding-left: 0px;
+  }
+  .main__productosycategorias .main__productos__articulos div {
+    justify-content: center;
+  }
+  .main__productosycategorias .main__productos__articulos div .articulo {
+    width: 300px;
+    height: 350px;
+    font-size: 25px;
+  }
+  .main__productosycategorias .main__productos__articulos div .articulo div img {
+    width: 100px;
+    height: 100px;
+  }
+  .main__productosycategorias .main__productos__articulos div .articulo div .botonfav {
+    width: auto;
+    height: auto;
   }
   /*Main Pagina Local */
   main section div div .main__local__img {
@@ -511,69 +596,109 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
     height: auto;
   }
   main section div div .main__local__h3__ubicacionyhorario {
-    font-size: 15px;
+    font-size: 25px;
   }
   main section div div .main__local__p__ubicacionyhorario {
-    font-size: 12px;
+    font-size: 20px;
   }
   main section div .mapa {
-    width: 300px;
+    width: 400px;
     height: auto;
     padding-left: 100px;
   }
   /* Paginas Contacto */
-  .maincontacto section div .datoscontacto {
+  .maincontacto section div .contacto {
     border-right: none;
   }
-  .maincontacto section div .datoscontacto div img {
+  .maincontacto section div .contacto div img {
     width: 40px;
     height: 30px;
   }
-  .maincontacto section div .datoscontacto div .datos-contacto h3 {
-    font-size: 18px;
+  .maincontacto section div .contacto div .datos h3 {
+    font-size: 25px;
   }
-  .maincontacto section div .datoscontacto div .datos-contacto p {
-    font-size: 16px;
+  .maincontacto section div .contacto div .datos p {
+    font-size: 20px;
+  }
+  .maincontacto section div .formulario {
+    margin-left: 50px;
+    width: 450px;
+    background-color: rgba(207, 150, 115, 0.228);
   }
   .maincontacto section div .formulario h3 {
-    font-size: 18px;
-  }
-  .maincontacto section div .formulario p {
-    font-size: 16px;
-  }
-  /* Paginas Anillos, Aros, Cadenas y Reloj */
-  .titulos__paginas {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
-  .seccion__articulos {
-    padding-top: 10px;
-    padding-left: 80px;
+  .maincontacto section div .formulario p {
+    font-size: 20px;
   }
-  /* Titulos de las paginas */
-  .titulos__paginas {
-    text-align: start;
-    font-style: italic;
-    font-size: 35px;
+  /* Paginas Anillos, Aros, Cadenas y Reloj */
+  .main__productosycategorias .seccion__aside {
+    width: auto;
+  }
+  .main__productosycategorias .seccion__aside .filtros__categoria__cel {
+    width: 300px;
+    background-color: rgba(217, 178, 160, 0.76);
+    text-align: center;
+  }
+  .main__productosycategorias .seccion__aside .filtros__categoria__cel .categoria__aside__h3 {
+    font-size: 20px;
     font-weight: bold;
   }
-  /*Pagina Carrito*/
+  .main__productosycategorias .seccion__aside .filtros__categoria__cel .aside__lista__cel {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .main__productosycategorias .seccion__aside .filtros__categoria__cel .aside__lista__cel .listafiltros, .main__productosycategorias .seccion__aside .filtros__categoria__cel .aside__lista__cel .div__contenedor .filtros .listafiltrosCadenas, .main__productosycategorias .seccion__aside .div__contenedor .filtros .filtros__categoria__cel .aside__lista__cel .listafiltrosCadenas, .main__productosycategorias .seccion__aside .filtros__categoria__cel .aside__lista__cel .div__contenedor .filtros .listafiltroreloj, .main__productosycategorias .seccion__aside .div__contenedor .filtros .filtros__categoria__cel .aside__lista__cel .listafiltroreloj {
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  .main__productosycategorias .seccion__aside .filtros__categorias {
+    display: none;
+  }
+  .main__productosycategorias .seccion__articulos {
+    width: auto;
+    margin-top: 50px;
+    padding-left: 0px;
+  }
+  .main__productosycategorias .seccion__articulos div {
+    justify-content: center;
+  }
+  .main__productosycategorias .seccion__articulos div .articulo {
+    width: 300px;
+    height: 350px;
+    font-size: 25px;
+  }
+  .main__productosycategorias .seccion__articulos div .articulo div img {
+    width: 100px;
+    height: 100px;
+  }
+  .main__productosycategorias .seccion__articulos div .articulo div .botonfav {
+    width: auto;
+    height: auto;
+  }
+  /*Pagina carrito*/
   main section .seccioncarrito {
     margin: 0px;
-    padding: 10px;
+    padding: 30px;
     justify-content: center;
   }
   main section .seccioncarrito img {
-    width: 70px;
-    height: 50px;
+    width: 150px;
+    height: 100px;
     margin-bottom: 30px;
   }
   main section .seccioncarrito .textocarritoycorazon {
     font-size: 25px;
-    margin-bottom: 30px;
+    margin: 30px;
+    padding: 20px;
   }
   main section .seccioncarrito div {
     text-align: center;
+    padding-top: 30px;
   }
   main section .seccioncarrito div .botoncompras {
     width: 90px;
@@ -588,11 +713,37 @@ main section .main__index__paginas .main__index__categorias:hover .titulocategor
   .filtros__productos__cel {
     display: none;
   }
-  /* Pagina Anillos */
   .aside-cel {
+    display: none;
+  }
+  .filtros__categoria__cel {
     display: none;
   }
 }
 /*Variables*/
+/*Pagina Carrito*/
+main section .seccioncarrito {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main section .seccioncarrito .textocarritoycorazon {
+  font-size: 40px;
+  font-weight: bold;
+  width: 300px;
+  margin: 0px 50px 10px 50px;
+  font-style: normal;
+  text-align: center;
+}
+main section .seccioncarrito div .botones__articulos .textoboton {
+  text-decoration: none;
+  font-size: xx-large;
+}
+main section .carrito-arriba {
+  border-bottom: solid 1px black;
+  padding-bottom: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */

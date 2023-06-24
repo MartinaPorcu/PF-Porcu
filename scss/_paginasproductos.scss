@@ -1,8 +1,17 @@
+/*Titulos Productos, Anillos, Aros, Cadenas y Reloj*/
+.titulos__paginas{
+    @include bold-size;
+    font-style: $Estilo-fuente;
+    margin: 10px 0px 30px 20px;
+    text-align: left;
+    }
+
+
 /*Página de Anillos, Aros, Cadenas, Productos, Reloj (Main)*/
 .main__productosycategorias {
     @include flex-wrap;
     padding: 20px;
-    justify-content: start;
+    justify-content: center;
     .seccion__aside {
     width: 20%;
         .div__contenedor {
@@ -50,11 +59,29 @@
     }
     .seccion__articulos {
         width: 80%;
+        justify-content: start;
         div{
+            article{
+                div{
+                    h5{
+                        font-weight: bold;
+                    }
+                }
+                div{
+                    .botonfav{
+                        width: 30px;
+                        height: 35px;
+                        img{
+                            width: 100%;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
             .articulo {
                 width: 200px;
                 height: 270px;
-                margin: 20px;
+                margin: 0px 20px 20px 20px;
                 padding: 10px;
                 background-color: white;
                 border-radius: 5px;

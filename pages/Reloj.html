@@ -18,7 +18,7 @@
                 <a class="navbar-brand" href="../index.html"><img class="logo animate__animated animate__fadeIn" src="../img/Logo.png" alt="logoSarava"></a>
                 <form class="d-flex " role="search">
                     <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="buscador botones__articulos" type="submit">Buscar</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,12 +40,12 @@
                             <a class="nav-link" href="./Contacto.html">Contacto</a>
                         </li>
                     </ul>
-                </div>
-                <div class="header__div__carrito">
-                    <ul class="header__ul__carrito">
-                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png" alt="Carrito" width="20px"></a></li>
-                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
-                    </ul>
+                    <div class="header__div__carrito">
+                        <ul class="header__ul__carrito">
+                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono carrito.png" alt="Carrito" width="20px"></a></li>
+                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png" alt="Favoritos" width="20px"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -57,7 +57,18 @@
 <main class="main__productosycategorias">
         <section class="container seccion__aside">
             <div class="col-2 div__contenedor">
-                <aside class="filtros">
+                <aside class="row filtros__categoria__cel">
+                    <h3 class="categoria__aside__h3">Tipo de Reloj</h3>
+                    <ul class="aside__lista__cel" >
+                        <li class="listafiltros">
+                            Analogico
+                        </li>
+                        <li class="listafiltros">
+                            Smartwatch
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="row filtros__categorias filtros">
                     <h3>Tipo de Reloj</h3>
                     <ul class="listafiltroreloj">
                         <li>
@@ -72,62 +83,125 @@
         <section class="container seccion__articulos">
             <div class="row">
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/reloj inteligente.jpg" alt="RelojSmartwatch" width="100px" height="100px">
-                    <p>Reloj Smartwatch multifuncion </p>
-                    <h5>$ 30.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/reloj inteligente.jpg" alt="RelojSmartwatch" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Reloj Smartwatch multifuncion </p>
+                        <h5>$ 30.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/reloj analogico plateado.jpg" alt="Relojanalogico" width="100px" height="100px">
-                    <p>Reloj Analogico plateado </p>
-                    <h5>$ 18.000</h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/reloj analogico plateado.jpg" alt="Relojanalogico" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Reloj Analogico plateado </p>
+                        <h5>$ 18.000</h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/reloj analogico rosa.jpg" alt="Relojanalogico" width="100px" height="100px">
-                    <p>Reloj Analogico rosa </p>
-                    <h5>$ 20.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/reloj analogico rosa.jpg" alt="Relojanalogico" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Reloj Analogico rosa </p>
+                        <h5>$ 20.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/reloj inteligente redondo.jpg" alt="RelojSmartwatch" width="100px" height="100px">
-                    <p>Reloj Smartwatch redondo clasico</p>
-                    <h5>$ 25.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/reloj inteligente redondo.jpg" alt="RelojSmartwatch" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Reloj Smartwatch redondo clasico</p>
+                        <h5>$ 25.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
             </div>
             <div class="row">
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/reloj analogico dorado.jpg" alt="Relojanalogico" width="100px" height="100px">
-                    <p>Reloj Analogico dorado </p>
-                    <h5>$ 19.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/reloj analogico dorado.jpg" alt="Relojanalogico" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Reloj Analogico dorado </p>
+                        <h5>$ 19.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/reloj analogico clasico.jpg" alt="Relojanalogico" width="100px" height="100px">
-                    <p>Reloj Analogico clasico</p>
-                    <h5>$ 19.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/reloj analogico clasico.jpg" alt="Relojanalogico" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Reloj Analogico clasico</p>
+                        <h5>$ 19.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/smartwatch blanco.jpg" alt="Relojdigital" width="100px" height="100px">
-                    <p>Reloj Smartwatch multifuncion blanco </p>
-                    <h5>$ 30.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/smartwatch blanco.jpg" alt="Relojdigital" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Reloj Smartwatch multifuncion blanco </p>
+                        <h5>$ 30.000 </h5>
+                    </div>
+                    <div>
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
             </div>
         </section>

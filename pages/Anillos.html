@@ -11,7 +11,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-transparent ">
@@ -19,7 +18,7 @@
                 <a class="navbar-brand" href="../index.html"><img class="logo animate__animated animate__fadeIn" src="../img/Logo.png" alt="Logosarava"></a>
                 <form class="d-flex " role="search">
                     <input class="buscador form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="buscador botones__articulos" type="submit">Buscar</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -41,14 +40,14 @@
                             <a class="nav-link" href="./Contacto.html">Contacto</a>
                         </li>
                     </ul>
-                </div>
-                <div class="header__div__carrito">
-                    <ul class="header__ul__carrito">
-                        <li class="header__li__carrito "><a href="./Carrito.html"><img src="../img/icono carrito.png"
-                                    alt="Carrito" width="20px"></a></li>
-                        <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
-                                    alt="Favoritos" width="20px"></a></li>
-                    </ul>
+                    <div class="header__div__carrito">
+                        <ul class="header__ul__carrito">
+                            <li class="header__li__carrito "><a href="./Carrito.html"><img src="../img/icono carrito.png"
+                                        alt="Carrito" width="20px"></a></li>
+                            <li class="header__li__carrito"><a href="./Carrito.html"><img src="../img/icono corazon.png"
+                                        alt="Favoritos" width="20px"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -60,7 +59,30 @@
     <main class="main__productosycategorias">
         <section class="container seccion__aside">
             <div class="row div__contenedor">
-                <aside class=" filtros col-xs-2 col-lg-2">
+                <aside class="row filtros__categoria__cel">
+                    <h3 class="categoria__aside__h3">Material</h3>
+                    <ul class="aside__lista__cel"  >
+                        <li class="listafiltros">
+                            Acero
+                        </li>
+                        <li class="listafiltros">
+                            Plata
+                        </li>
+                    </ul>
+                    <h3 class="categoria__aside__h3">Tema</h3>
+                    <ul class="aside__lista__cel"  >
+                        <li class="listafiltros">
+                            Brillos
+                        </li>
+                        <li class="listafiltros">
+                            Clásicos
+                        </li>
+                        <li class="listafiltros">
+                            Formas y Símbolos
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="row filtros__categorias filtros">
                     <h3>Material</h3>
                     <ul class="listafiltros">
                         <li>
@@ -87,62 +109,125 @@
         <section class="container seccion__articulos">
             <div class="row">
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/anillo clasico de plata.jpg" alt="Anilloclasico" width="100px" height="100px">
-                    <p>Anillo de plata clásico </p>
-                    <h5>$ 8.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/anillo clasico de plata.jpg" alt="Anilloclasico" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Anillo de plata clásico </p>
+                        <h5>$ 8.000 </h5>
+                    </div>
+                    <div class="div__articulo__boton">
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/anillo clasico acero.jpg" alt="Anilloacero" width="100px" height="100px">
-                    <p>Anillo de acero clásico </p>
-                    <h5>$ 4.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/anillo clasico acero.jpg" alt="Anilloacero" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Anillo de acero clásico </p>
+                        <h5>$ 4.000 </h5>
+                    </div>
+                    <div class="div__articulo__boton">
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/anillo plata.jpg" alt="Anilloclasico" width="100px" height="100px">
-                    <p>Anillo de plata clásico </p>
-                    <h5>$ 8.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/anillo plata.jpg" alt="Anilloclasico" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Anillo de plata clásico </p>
+                        <h5>$ 8.000 </h5>
+                    </div>
+                    <div class="div__articulo__boton">
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/anillo de acero con brillo.jpeg" alt="Anilloacero" width="100px" height="100px">
-                    <p>Anillo de acero con brillos </p>
-                    <h5>$ 5.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/anillo de acero con brillo.jpeg" alt="Anilloacero" width="100px" height="100px">
+                    </div>
+                    <div>   
+                        <p>Anillo de acero con brillos </p>
+                        <h5>$ 5.000 </h5>
+                    </div>
+                    <div class="div__articulo__boton">
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
             </div>
             <div class="row">
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/anillo de corazon.jpg" alt="Anillocorazon" width="100px" height="100px">
-                    <p>Anillo de plata con corazones </p>
-                    <h5>$ 10.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/anillo de corazon.jpg" alt="Anillocorazon" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Anillo de plata con corazones </p>
+                        <h5>$ 10.000 </h5>
+                    </div>
+                    <div class="div__articulo__boton">
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/anillo arbol de la vida.jpg" alt="Anilloarbol" width="100px" height="100px">
-                    <p>Anillo de acero con arbol de la vida </p>
-                    <h5>$ 5.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/anillo arbol de la vida.jpg" alt="Anilloarbol" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Anillo de acero con arbol de la vida </p>
+                        <h5>$ 5.000 </h5>
+                    </div>
+                    <div class="div__articulo__boton">
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
                 <article class="articulo col-xs-2 col-lg-2">
-                    <img src="../img/anillo de plata con brillo.jpg" alt="Anillobrillo" width="100px" height="100px">
-                    <p>Anillo de plata con piedras brillantes </p>
-                    <h5>$ 11.000 </h5>
-                    <button class="botones__articulos">
-                        Agregar al Carrito
-                    </button>
+                    <div>
+                        <img src="../img/anillo de plata con brillo.jpg" alt="Anillobrillo" width="100px" height="100px">
+                    </div>
+                    <div>
+                        <p>Anillo de plata con piedras brillantes </p>
+                        <h5>$ 11.000 </h5>
+                    </div>
+                    <div class="div__articulo__boton">
+                        <button class="botones__articulos">
+                            Agregar al Carrito
+                        </button>
+                        <button class="botones__articulos botonfav">
+                            <img src="../img/icono corazon.png" alt="iconocorazon">
+                        </button>
+                    </div>
                 </article>
             </div>
         </section>
